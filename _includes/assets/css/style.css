@@ -1,0 +1,181 @@
+/****************************************
+* Site wide
+****************************************/
+
+/* Box Model*/
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: rgb(22, 99, 44);
+  --secondary: rgb(255, 99, 44);
+  --background:rgb(255, 255, 255);
+  --secondary-background: rgb(245, 245, 246);
+  --dark-background: rgb(0, 0, 0);
+  --font: rgb(0, 0, 0);
+  --light-font: rgb(255, 255, 255);
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-family: "Work Sans", Helvetica, Arial, sans-serif;
+}
+
+html{
+  font-size: 16px;
+}
+
+body {
+ 
+}
+
+body > header {
+  margin: 0;
+  padding: 0;
+}
+
+/****************************************
+* Components
+****************************************/
+
+/*main navbar - based on https://alvarotrigo.com/blog/hamburger-menu-css/ */
+.mainNav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--light-font);
+  height: 140px;
+  padding-right: 1rem;
+  background-color: transparent;
+  position: relative;
+}
+
+.mainNav .logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainNav .logo a{
+  color: var(--font);
+  text-decoration: none;
+}
+
+.mainNav .logo img{
+  background-color: rgb(0, 0, 0);
+  padding: 5% 10%;
+  min-width: 14rem;
+}
+
+.mainNav a[data-current="current item"] {
+  color: var(--font);
+}
+
+.navItems {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navItems>li {
+  margin-right: 1rem;
+  white-space: nowrap;
+}
+
+.menuButtonContainer {
+  display: none;
+}
+
+#menuToggle {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+
+  /****************************************
+  * Components
+  ****************************************/
+
+  /*main navbar - based on https://alvarotrigo.com/blog/hamburger-menu-css/ */
+  .menuButtonContainer {
+    display: flex;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navItems {
+    position: absolute;
+    top: 0;
+    margin-top: 140px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background);
+  }
+  
+  .menuButton,
+  .menuButton::before,
+  .menuButton::after {
+    display: block;
+    background-color: var(--font);
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .menuButton::before {
+    content: '';
+    margin-top: -8px;
+  }
+
+  .menuButton::after {
+    content: '';
+    margin-top: 8px;
+  }
+
+  #menuToggle:checked+.menuButtonContainer .menuButton::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+  }
+
+  #menuToggle:checked+.menuButtonContainer .menuButton::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
+  }
+
+  #menuToggle~.navItems li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    overflow: hidden;
+  }
+  
+  #menuToggle:checked~.navItems li {
+    height: 2rem;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .navItems>li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5rem 0;
+    width: 100%;
+    color: var(--font);
+  }
+}

@@ -1,0 +1,46 @@
+---
+layout: layouts/base.njk
+section: projects
+---
+{{ layoutContent | safe }}
+{% set collectionList = collections[collectionName] %}
+<section>
+<h1>Active Projects</h1>
+	{% for item in collectionList | reverse %}
+        {%if not item.data.isPastProject %}
+		<article{% if item.url == url %} data-current="current item"{% endif %} class="{{ collectionName }}">
+            <h3>
+                <a href="{{ item.url | url }}">
+                    {% if item.data.title %}
+                        {{ item.data.title }}
+                    {% else %}
+                        Untitled
+                    {% endif %}
+                </a>
+            </h3>
+            <img src="{{ item.data.image }}" alt="{{ item.data.imgAlt }}">
+            <p>{{ item.data.summary }}</p>
+		</article>
+        {% endif %}
+	{% endfor %}
+</section>
+<section>
+<h1>Past Projects</h1>
+	{% for item in collectionList | reverse %}
+        {%if item.data.isPastProject %}
+		<article{% if item.url == url %} data-current="current item"{% endif %} class="{{ collectionName }}">
+            <h3>
+                <a href="{{ item.url | url }}">
+                    {% if item.data.title %}
+                        {{ item.data.title }}
+                    {% else %}
+                        Untitled
+                    {% endif %}
+                </a>
+            </h3>
+            <img src="{{ item.data.image }}" alt="{{ item.data.imgAlt }}">
+            <p>{{ item.data.summary }}</p>
+		</article>
+        {% endif %}
+	{% endfor %}
+</section>

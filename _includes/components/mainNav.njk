@@ -1,0 +1,17 @@
+<nav class="mainNav">
+  <div class="logo">
+    <a href="/"><img src="/static/img/logo.png" alt="Code For Tucson Logo"></a>
+  </div>
+  <input id="menuToggle" type="checkbox" />
+  <label class='menuButtonContainer' for="menuToggle">
+    <div class='menuButton'></div>
+  </label>
+  {% set navPages = collections.all | eleventyNavigation %}
+  <ul class="navItems">
+  {%- for entry in navPages %}
+    <li>
+      <a href="{{ entry.url | url }}"{% if entry.url == page.url %} data-current="current item"{% endif %}>{{ entry.title }}</a>
+    </li>
+  {%- endfor %}
+  </ul>
+</nav>

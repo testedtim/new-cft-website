@@ -1,0 +1,33 @@
+<!doctype html>
+<html {% if section %} data-current="{{ section }}"{% endif %} lang="en">
+
+	{% include "components/head.njk" %}
+
+	<body>
+		<div class="home-vp">
+			<header>
+				{% include "components/mainNav.njk" %}
+			</header>
+			<main class="homepage">
+				<section>
+					<header class="headingBox">
+						<h1>{{ headerText }}</h1>
+						{{ layoutContent | safe }}
+					</header>
+					<article>
+						<h2>Join the Conversation</h2>
+						<p>Sign up for our Slack workspace. We primarily use Slack for connecting and communicating. Introduce yourself, then join channels you are interested in.</p>
+						<a class="button" href="">Sign up for Slack</a>
+					</article>
+					<article>
+						<h2>Attend an Event</h2>
+						<p>We host virtual “hacknights” twice a month to discuss projects, collaborate, and learn from each other. Newcomers welcome, regardless of technical ability.</p>
+						<a class="button" href="">RSVP on Meetup</a>
+					</article>
+				</section>
+			</main>
+		{% include "components/mainFooter.njk" %}
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!doctype html>
+<html {% if section %} data-current="{{ section }}"{% endif %} lang="en">
+
+	{% include "components/head.njk" %}
+
+	<body>
+		<header class="mainHeader">
+			{% include "components/mainNav.njk" %}
+			{% if headerText %}
+			<div class="headingBox">
+				<h1>{{ headerText }}</h1>
+				{% if summary %}
+				<p>{{ summary }}</p>
+				{% endif %}
+			</div>
+			{% endif %}
+		</header>
+
+		<main>
+			<section>
+				{{ layoutContent | safe }}
+			</section>
+		</main>
+		
+		{% include "components/mainFooter.njk" %}
+
+	</body>
+
+</html>

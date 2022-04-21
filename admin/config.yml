@@ -1,0 +1,46 @@
+backend:
+  name: git-gateway
+  branch: master # Branch to update (optional; defaults to master)
+
+local_backend: true
+
+# Uncomment below to enable drafts
+# publish_mode: editorial_workflow
+
+media_folder: "static/img" # Media files will be stored in the repo under images/uploads
+
+collections:
+  - name: "projects" # Used in routes, e.g., /admin/collections/blog
+    label: "Project" # Used in the UI
+    folder: "projects" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - { label: "Past Project", name: "isPastProject", widget: "boolean", default: false }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Preview Image", name: "image", widget: "image", required: false}
+      - { label: "Preview Image Alt Text", name: "imgAlt", widget: "string", required: false}
+      - { label: "Summary", name: "summary", widget: "text", required: false }
+      - { label: "Tags", name: "tags", widget: "list", default: ["project"] }
+      - { label: "Body", name: "body", widget: "markdown", required: false }
+  # Our pages e.g. About
+  - name: "pages"
+    label: "Page"
+    folder: "pages"
+    create: false # Change to true to allow editors to create new pages
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Permalink", name: "permalink", widget: "string", default: "/{title}/index.html" }
+      - { label: "Header Text", name: "headerText", widget: "string", default: "{title}" }
+      - { label: "Summary", name: "summary", widget: "string", required: false}
+      - label: "Navigation" # https://www.11ty.dev/docs/plugins/navigation/
+        name: "eleventyNavigation"
+        widget: "object"
+        fields:
+          - { label: "Key", name: "key", widget: "string", default: "{title}", required: false}
+          - { label: "Order", name: "order", widget: "number", default: 0, required: false}
+        required: false
+      - { label: "Body", name: "body", widget: "markdown", required: false }
+      - { label: "Include Collection List?", name: "hasCollection", widget: "boolean", required: false }
+      - { label: "Tags to Include in collection", name: "collectionName", widget: "string", required: false }
