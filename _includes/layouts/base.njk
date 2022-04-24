@@ -4,8 +4,8 @@
 	{% include "components/head.njk" %}
 
 	<body>
+		{% include "components/mainNav.njk" %}
 		<header class="mainHeader">
-			{% include "components/mainNav.njk" %}
 			{% if headerText %}
 			<div class="headingBox">
 				<h1>{{ headerText }}</h1>

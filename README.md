@@ -4,8 +4,8 @@
 Using NetlifyCMS to build a mostly static site, with easy to access content for later updating.
 
 ## Todo
-- [ ] Reset styles
-- [ ] Cleanup directories
+- [x] Reset styles
+- [x] Cleanup directories
 - [ ] Homepage
 - [ ] Projects
 - [ ] Get involved
