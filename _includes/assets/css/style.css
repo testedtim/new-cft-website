@@ -47,9 +47,23 @@ body > header {
   padding: 1rem;
 }
 
-/****************************************
-* Components
-****************************************/
+section{
+  text-align: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+article {
+  padding: 4rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+  text-align: left;
+}
+
+article h3 a{
+  color: var(--font);
+}
 
 /*main navbar - based on https://alvarotrigo.com/blog/hamburger-menu-css/ */
 .mainNav {
@@ -101,75 +115,91 @@ body > header {
   display: none;
 }
 
-/*home above the fold*/
-.home-vp{
+/*above the fold*/
+.vp{
   height: 100vh;
-  background-image: url("/static/img/home-bg.jpg");
+  background-image: url("/static/img/bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   color: var(--light-font);
 }
 
-.home-vp header {
+.vp header {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-end;
   row-gap: 1rem;
-  align-items: center;
-  margin: 10%;
+  align-items: flex-start;
+  margin: 0 10%;
+  position: absolute;
+  bottom: 1rem;
 }
 
-.home-vp header * {
-  margin: 0 auto;
+.vp header * {
+  margin: 0;
 }
 
-.home-vp a {
+.vp a {
   color: var(--light-font);
 }
 
-.home-vp a:visited {
+.vp a:visited {
   color: var(--light-font);
 }
 
-.home-vp h1{
+.vp h1{
   font-size: 7rem;
   white-space: nowrap;
 }
 
-.home-vp p:last-child{
+.vp p:last-child{
   font-size: 125%;
+  margin: 0 0 2rem 2rem;
 }
 
-.homepage article{
-  padding: 4rem;
+.home .vp {
+  background-image: url("/static/img/home-bg.jpg");
+}
+
+.home .vp header {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  row-gap: 1rem;
+  margin: 10%;
+  text-align: center;
+}
+
+.home section {
+  max-width: 100%;
+}
+
+.home main article{
   background-color: var(--dark-background);
   color: var(--light-font);
-  gap: 4rem;
-
 }
 
-.homepage article:nth-child(odd){
+.home main article:nth-child(odd){
   background-color: rgba(51, 51, 51);
 }
 
-.homepage article:nth-child(even) img{
+.home main article:nth-child(even) img{
   order: -1;
 }
 
-.homepage article div{
+.home main article div, 
+.project div{
   display: flex;
   flex-direction: column;
   justify-content: center;
   max-width: 760px;
 }
 
-.homepage .button {
+.home main .button {
   width: 100%;
 }
 
-.homepage article img{
+.home main article img{
   max-width: 50%;
   height: auto;
 }
@@ -210,23 +240,23 @@ body > header {
 }
 
 @media screen and (max-width: 1175px) {
-  .home-vp h1{
+  .vp h1{
     font-size: 5rem;
   }
 }
 
 @media screen and (max-width: 850px){
-  .home-vp header {
+  .vp header {
     margin: 10% 1rem;
   }
 
-  .homepage article{
+  article{
     flex-direction: column;
     gap: .5rem;
     padding: 2rem;
   }
 
-  .homepage article img{
+  .home main article img{
     max-width: 100%;
     order: -1;
   }
@@ -238,7 +268,7 @@ body > header {
   * Components
   ****************************************/
 
-  .home-vp h1{
+  .vp h1{
     font-size: 3rem;
   }
 

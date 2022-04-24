@@ -1,0 +1,11 @@
+<article{% if item.url == url %} data-current="current item"{% endif %} class="{{ collectionName }}">
+    <div>
+        <h3>
+            <a href="{{ item.url | url }}">
+                {{ item.data.title }}
+            </a>
+        </h3>
+        <p>{{ item.data.summary }}</p>
+    </div>
+    <img src="{{ item.data.image }}" alt="{{ item.data.imgAlt }}">
+</article>

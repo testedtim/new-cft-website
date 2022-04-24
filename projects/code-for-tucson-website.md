@@ -1,7 +1,7 @@
 ---
 pastProject: false
 title: Code for Tucson Website
-image: /static/img/mac-fingers.png
+image: /static/img/mac-fingers.jpg
 imgAlt: Someone who can't find the home keys
 summary: >-
   We haven’t had an active website since 2017, so we are building one! Here it

@@ -1,7 +1,7 @@
 ---
 pastProject: false
 title: Green Welcome Package
-image: /static/img/cactus.png
+image: /static/img/cactus.jpg
 imgAlt: Cacti
 summary: Tucson is a desert experiencing drought exacerbated by the climate crisis...
 tags:

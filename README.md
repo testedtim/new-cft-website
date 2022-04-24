@@ -7,7 +7,7 @@ Using NetlifyCMS to build a mostly static site, with easy to access content for 
 - [x] Reset styles
 - [x] Cleanup directories
 - [x] Homepage
-- [ ] Projects
+- [x] Projects
 - [ ] Get involved
 
 ## Contribute

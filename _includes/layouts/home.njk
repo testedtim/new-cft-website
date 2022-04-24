@@ -3,16 +3,18 @@
 
 	{% include "components/head.njk" %}
 
-	<body>
-		<div class="home-vp">
+	<body class="home">
+		<div class="vp">
 			{% include "components/mainNav.njk" %}
 			<header>
+				{% if headerText %}
 				<p>{{ headerText }}</p>
+				{% endif %}
 				<h1>{{ metadata.title }}</h1>
 				{{ layoutContent | safe }}
 			</header>
 		</div>
-			<main class="homepage">
+			<main>
 				<section>
 					<article>
 						<div>

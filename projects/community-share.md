@@ -2,7 +2,7 @@
 pastProject: true
 isPastProject: true
 title: Community Share
-image: /static/img/origami.png
+image: /static/img/origami.jpg
 imgAlt: Origami
 summary: Community Share was a project to connect educators and professionals
   with the goal of “Inspiring our next generation of learners & leaders.” It
