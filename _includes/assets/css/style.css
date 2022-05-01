@@ -22,6 +22,7 @@ body {
 	padding: 0;
 	margin: 0;
 	font-family: "Work Sans", Helvetica, Arial, sans-serif;
+  min-width: 300px;
 }
 
 html{
@@ -65,6 +66,17 @@ article h3 a{
   color: var(--font);
 }
 
+.logo {
+  background-image: url("/static/img/logo.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-color: rgb(0, 0, 0);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /*main navbar - based on https://alvarotrigo.com/blog/hamburger-menu-css/ */
 .mainNav {
   display: flex;
@@ -72,16 +84,14 @@ article h3 a{
   align-items: center;
   justify-content: space-between;
   color: var(--light-font);
-  height: 140px;
   padding-right: 1rem;
   background-color: transparent;
   position: relative;
 }
 
 .mainNav .logo{
-  background-color: rgb(0, 0, 0);
   height: 138px;
-  width: 222px;
+  width: 138px;
 }
 
 .navItems {
@@ -132,7 +142,7 @@ article h3 a{
   align-items: flex-start;
   margin: 0 10%;
   position: absolute;
-  bottom: 1rem;
+  bottom: 10%;
 }
 
 .vp header * {
@@ -168,6 +178,8 @@ article h3 a{
   row-gap: 1rem;
   margin: 10%;
   text-align: center;
+  position: relative;
+  top: 10%;
 }
 
 .home section {
@@ -260,27 +272,16 @@ article h3 a{
     max-width: 100%;
     order: -1;
   }
-}
-
-@media screen and (max-width: 740px) {
-
-  /****************************************
-  * Components
-  ****************************************/
-
-  .vp h1{
-    font-size: 3rem;
-  }
 
   .mainNav .logo {
     height: 70px;
-    width: 111px;
+    width: 70px;
   }
 
   /*main navbar - based on https://alvarotrigo.com/blog/hamburger-menu-css/ */
   .menuButtonContainer {
     display: flex;
-    height: 100%;
+    height: 30px;
     width: 30px;
     cursor: pointer;
     flex-direction: column;
@@ -351,5 +352,18 @@ article h3 a{
     padding: 0.5rem 0;
     width: 100%;
     color: var(--font);
+  }
+}
+
+@media screen and (max-width: 750px){
+  .vp h1{
+    font-size: 3rem;
+    white-space: normal;
+  }
+}
+
+@media screen and (max-width: 550px){
+  .home .vp header{
+    margin: 5%;
   }
 }
