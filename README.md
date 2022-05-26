@@ -10,7 +10,7 @@ Using NetlifyCMS to build a mostly static site, with easy to access content for 
 - [x] Projects
 - [ ] Get involved
 - [x] Update project posts
-- [ ] About page
+- [x] About page
 - [x] Code of conduct
 
 ## Contribute

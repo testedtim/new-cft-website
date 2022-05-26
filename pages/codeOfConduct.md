@@ -24,7 +24,7 @@ Except for instances where it would significantly impede productivity, there is 
 ## Procedures
 ### Who to Contact
 If you are unable to resolve the issue, or are uncomfortable doing so, you should contact a Captain. Captains agree to keep information shared in association with a Code of Conduct violation private, and may reveal it only with the approval of the affected person(s).
-# Outcomes
+## Outcomes
 Captains agree to treat all violations impartially. In situations where this may not be possible due to personal or business relationships, Captains may elect to refer the violation report to another appropriate decision-maker with the approval of the affected person(s).
 Captains may take any of the following actions, or any other appropriate action, to resolve a conduct issue:
 * Individual Meeting: A meeting between the party responsible for the conduct and Captain(s).

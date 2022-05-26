@@ -2,7 +2,9 @@
 layout: layouts/base.njk
 section: page
 ---
-{{ layoutContent | safe }}
-{% if hasCollection and collectionName %}
-    {% include "components/collectionList.njk" %}
-{% endif %}
+<article>
+    {{ layoutContent | safe }}
+    {% if hasCollection and collectionName %}
+        {% include "components/collectionList.njk" %}
+    {% endif %}
+</article>

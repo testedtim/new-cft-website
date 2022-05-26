@@ -45,17 +45,44 @@ body > header {
 }
 
 section{
-  text-align: center;
   max-width: 1100px;
   margin: 0 auto;
 }
 
+h1{
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-weight: bold;
+}
+section h1,
+section h2,
+section h3 {
+  text-align: center;
+}
+
+article h1,
+article h2,
+article h3 {
+  text-align: left;
+}
+
 article {
   padding: 4rem 10%;
+  text-align: left;
+}
+
+.home article,
+.about article,
+.project {
   display: flex;
   justify-content: space-around;
   gap: 4rem;
-  text-align: left;
 }
 
 article h3 a{
@@ -217,6 +244,18 @@ article h3 a{
   flex-direction: column;
   justify-content: center;
   max-width: 760px;
+}
+
+.project {
+  padding: 4rem;
+}
+
+.project a{
+  text-decoration: none;
+}
+
+.project a:hover{
+  text-decoration: underline;
 }
 
 .home main .button {

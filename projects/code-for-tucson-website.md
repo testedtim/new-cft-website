@@ -9,7 +9,7 @@ summary: We haven’t had an active website since 2017, so we are building one!
 tags:
   - project
 ---
-We haven’t had an active website since 2017, so we are building one! Here it is!\
+We haven’t had an active website since 2017, so we are building one! Here it is!
 
 ## What we have so far
 
