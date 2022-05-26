@@ -2,7 +2,7 @@
 pastProject: false
 isPastProject: false
 title: Code for Tucson Website
-image: static/img/mac-fingers.jpg
+image: /static/img/mac-fingers.jpg
 imgAlt: Someone who can't find the home keys
 summary: We haven’t had an active website since 2017, so we are building one!
   Here it is!
@@ -15,7 +15,7 @@ We haven’t had an active website since 2017, so we are building one! Here it i
 
 ### Some great Prototypes
 
-  ![Prototypes in Figma](static/img/prototypes.png "prototypes")
+  ![Prototypes in Figma](/static/img/prototypes.png "prototypes")
 
 * https://github.com/chris-calmatlas/c4t-netlifycms-Leonardo
 * https://github.com/chris-calmatlas/c4t-netlifycms-mario
@@ -23,9 +23,9 @@ We haven’t had an active website since 2017, so we are building one! Here it i
 
 ### A new logo
 
-![Old Logo](static/img/orig_logo.png "Old Logo")
+![Old Logo](/static/img/orig_logo.png "Old Logo")
 
-![New Logo](static/img/new_logo.png "New Logo")
+![New Logo](/static/img/new_logo.png "New Logo")
 
 ## What we need
 

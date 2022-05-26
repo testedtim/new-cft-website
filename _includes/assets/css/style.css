@@ -77,6 +77,10 @@ article {
   text-align: left;
 }
 
+img {
+  max-width: 100%;
+}
+
 .home article,
 .about article,
 .project {
