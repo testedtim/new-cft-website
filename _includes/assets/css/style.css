@@ -90,7 +90,7 @@ article h3 a{
 }
 
 .logo {
-  background-image: url("/static/img/logo.svg");
+  background-image: url("{{ '/static/img/logo.svg' | url }}");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 50% 80%;
@@ -151,7 +151,7 @@ article h3 a{
 /*above the fold*/
 .vp{
   height: 100vh;
-  background-image: url("/static/img/bg.jpg");
+  background-image: url("{{ '/static/img/bg.jpg' | url }}");
   background-size: cover;
   background-repeat: no-repeat;
   color: var(--light-font);
@@ -199,11 +199,11 @@ article h3 a{
 }
 
 .home .vp {
-  background-image: url("/static/img/home-bg.jpg");
+  background-image: url("{{ '/static/img/home-bg.jpg' | url }}");
 }
 
 .about .vp {
-  background-image: url("/static/img/about-bg.jpg");
+  background-image: url("{{ '/static/img/about-bg.jpg' | url }}");
 }
 
 .home .vp header {

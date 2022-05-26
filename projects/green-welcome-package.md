@@ -1,7 +1,7 @@
 ---
 pastProject: false
 title: Green Welcome Package
-image: /static/img/cactus.jpg
+image: static/img/cactus.jpg
 imgAlt: Cacti
 summary: A website that shares the joys of living in Tucson and how to acclimate and thrive in our desert town.
 tags:
