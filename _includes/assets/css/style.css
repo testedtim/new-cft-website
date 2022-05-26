@@ -22,7 +22,7 @@ body {
 	padding: 0;
 	margin: 0;
 	font-family: "Work Sans", Helvetica, Arial, sans-serif;
-  min-width: 300px;
+  min-width: 390px;
 }
 
 html{
@@ -51,9 +51,9 @@ section{
 }
 
 article {
-  padding: 4rem;
+  padding: 4rem 10%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 4rem;
   text-align: left;
 }
@@ -161,6 +161,14 @@ article h3 a{
 .vp p:last-child{
   font-size: 125%;
   margin: 0 0 2rem 2rem;
+}
+
+.about h2 {
+  font-size: 4rem;
+}
+
+.about .content h2 {
+  text-align: center;
 }
 
 .home .vp {

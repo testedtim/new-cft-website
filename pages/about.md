@@ -20,7 +20,7 @@ eleventyNavigation:
   key: About
   order: 4
 ---
-# Leadership Team
+## Leadership Team
 
 For more information on these roles, see Code for America's Roles within a Local Brigade.
 
