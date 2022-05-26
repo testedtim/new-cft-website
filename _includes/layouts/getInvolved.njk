@@ -7,30 +7,33 @@
 		<div class="vp">
 			{% include "components/mainNav.njk" %}
 			<header>
+				<h1>{{ metadata.title }}</h1>
 				{% if headerText %}
 				<p>{{ headerText }}</p>
 				{% endif %}
-				<h1>{{ metadata.title }}</h1>
-				{{ layoutContent | safe }}
 			</header>
 		</div>
 			<main>
 				<section>
+				<h1>How to Get Involved</h1>
 					<article>
-						<div>
-							<h2>Join the Conversation</h2>
-							<p>Sign up for our Slack workspace. We primarily use Slack for connecting and communicating. Introduce yourself, then join channels you are interested in.</p>
-							<a class="button" href="">Sign up for Slack</a>
-						</div>
-						<img src="/static/img/slack.jpg" alt="Slack">
-					</article>
-					<article>
-						<div>
-							<h2>Attend an Event</h2>
-							<p>We host virtual “hacknights” twice a month to discuss projects, collaborate, and learn from each other. Newcomers welcome, regardless of technical ability.</p>
-							<a class="button" href="">RSVP on Meetup</a>
-						</div>
-						<img src="/static/img/meetup.jpg" alt="Meetup">
+						<ul class="three_steps">
+							<li>
+								<img src="/static/img/slack_logo.png" alt="Slack Logo">
+								<h3>Step 1</h3>
+								<p><strong>Find a project: </strong>We have multiple projects in the work needing people of any background and skills. Look for one you’re interested in!</p>
+							</li>
+							<li>
+								<img src="/static/img/slack_logo.png" alt="Slack Logo">
+								<h3>Step 2</h3>
+								<p><strong>Join our Slack channel: </strong>Slack is where we get to know each other and work together. Come and introduce yourself!</p>
+							</li>
+							<li>
+								<img src="/static/img/slack_logo.png" alt="Slack Logo">
+								<h3>Step 3</h3>
+								<p><strong>Find a project: </strong>We have multiple projects in the work needing people of any background and skills. Look for one you’re interested in!</p>
+							</li>
+						</ul>
 					</article>
 				</section>
 			</main>

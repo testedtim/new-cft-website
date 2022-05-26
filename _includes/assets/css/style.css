@@ -302,6 +302,30 @@ article h3 a{
   text-decoration: none;
 }
 
+/*Three get involved steps*/
+.getInvolved article{
+  padding: 0 0 4rem 0;
+}
+
+.three_steps{
+  list-style-type: none;
+  display: flex;
+  gap: 4rem;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.three_steps li{
+  flex: 1 1 0px
+}
+
+.three_steps img{
+  margin: 0 auto;
+  display: block;
+}
+
+
 @media screen and (max-width: 1175px) {
   .vp h1{
     font-size: 5rem;
