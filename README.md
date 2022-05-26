@@ -1,7 +1,43 @@
 # Draft and prototyping CMS for Code for Tucson
-## Description
+## Description and usage
 
 Using NetlifyCMS to build a mostly static site, with easy to access content for later updating.
+
+### Why are there so many things on such a simple website
+This page uses [11ty](https://www.11ty.dev/), which is a [Jamstack](https://jamstack.org/what-is-jamstack/) and [Nunjucks](https://mozilla.github.io/nunjucks/) as a templating engine.
+
+What this means is you can build reuseable components and pages using Nunjucks syntax, then run 11ty to build the static website to be hosted. It looks complicated, but this method allows for faster page building, as a signle component can be used across multiple pages quickly. 
+
+### Quickstart
+
+* Download [Node.js](https://nodejs.org/en/) and install it to your computer
+* Clone this repo - Either download it and unzip it somewhere or clone it with git
+* In a powershell or terminal navigate to the root directory of the project (Where the package.json is)
+* Run `npm install`
+* Run `npm run serve`
+* Start coding
+
+These steps should get you a local server running at https://localhost:8080/ that will refresh automatically whenever a file is changed and then saved in the project directory. You get to see your changes made in real time.
+
+hint: If you aren't seeing your changes then you might have a syntax error. ctrl+c in the terminal to kill the servers, then run `npm run serve` again to get them started up. If there's an error you'll see it in the terminal. 
+
+### netlifyCMS
+If you followed the quickstart steps above, the command also started a local backend server for netlifycms. If you go to https://localhost:8080/admin you should be met with a login screen. From here you can check out the CMS. It's a bit more limited than originally expected, but it is customizeable so has a lot of potential.
+
+NetlifyCMS and Netlify are not actually associated with each other, but hosting a netlifycms site on netlify is incredibly easy. Unfortunately, at this time a code for tucson netlify account does not exist, so this static page is being hosted on github pages. This means authentication for the CMS is broken, but the page is still hosted.
+
+If you have made changes to the code and would like to push them to a repo to be hosted live on github pages, I've tried to simplify the process by adding a github script to the package.json. Change the value of pathprefix to match the subfolder of the hosted site and [configure github pages to use /docs](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#choosing-a-publishing-source) as the source. Then run `npm run github`
+
+###### package.json
+~~~
+"scripts": {
+    "build": "npx eleventy",
+    "watch": "npx eleventy --watch",
+    "serve": "concurrently --kill-others \"npx netlify-cms-proxy-server\" \"npx eleventy --serve\"",
+    "debug": "DEBUG=* npx eleventy",
+    **"github": "npx eleventy --pathprefix=new-cft-website --output=docs"**
+},
+~~~
 
 ## Todo
 - [x] Reset styles
@@ -12,9 +48,7 @@ Using NetlifyCMS to build a mostly static site, with easy to access content for 
 - [x] Update project posts
 - [x] About page
 - [x] Code of conduct
-
-## Background
-A new code repository for the Code for Tucson Website.
+- [ ] Update this Todo
 
 ## Contributing
 If you're new to coding, we recommend installing:
