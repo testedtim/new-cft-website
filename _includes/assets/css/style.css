@@ -311,7 +311,7 @@ article h3 a{
   padding: 0 0 4rem 0;
 }
 
-.three_steps{
+.three_steps {
   list-style-type: none;
   display: flex;
   gap: 4rem;
@@ -322,6 +322,10 @@ article h3 a{
 
 .three_steps li{
   flex: 1 1 0px
+}
+
+.three_steps h3{
+  text-align: center;
 }
 
 .three_steps img{
