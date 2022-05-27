@@ -2,12 +2,14 @@ backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
 
+#This needs to be disabled to work with netlify or there will be no auth
 local_backend: true
 
 # Uncomment below to enable drafts
 # publish_mode: editorial_workflow
 
-media_folder: "static/img" # Media files will be stored in the repo under images/uploads
+#Update this when the page is no longer hosted in a subdirectory
+media_folder: "/new-cft-website/static/img" # Media files will be stored in the repo under images/uploads
 
 collections:
   - name: "projects" # Used in routes, e.g., /admin/collections/blog

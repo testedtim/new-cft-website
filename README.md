@@ -26,18 +26,31 @@ If you followed the quickstart steps above, the command also started a local bac
 
 NetlifyCMS and Netlify are not actually associated with each other, but hosting a netlifycms site on netlify is incredibly easy. Unfortunately, at this time a code for tucson netlify account does not exist, so this static page is being hosted on github pages. This means authentication for the CMS is broken, but the page is still hosted.
 
-If you have made changes to the code and would like to push them to a repo to be hosted live on github pages, I've tried to simplify the process by adding a github script to the package.json. Change the value of pathprefix to match the subfolder of the hosted site and [configure github pages to use /docs](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#choosing-a-publishing-source) as the source. Then run `npm run github`
+If you notice you're missing some images, see the *Hosting the static page in a subdirectory* section. The short version is that using `npm run serve-subdir` might fix your problem
 
 ###### package.json
 ~~~
-"scripts": {
+  "scripts": {
     "build": "npx eleventy",
     "watch": "npx eleventy --watch",
     "serve": "concurrently --kill-others \"npx netlify-cms-proxy-server\" \"npx eleventy --serve\"",
     "debug": "DEBUG=* npx eleventy",
-    **"github": "npx eleventy --pathprefix=new-cft-website --output=docs"**
-},
+    "build-subdir": "npx eleventy --pathprefix=new-cft-website --output=new-cft-website/docs",
+    "serve-subdir": "npx eleventy --serve --output=new-cft-website/docs --pathprefix=new-cft-website"
+  },
 ~~~
+
+### Hosting the static page in a subdirectory - and how it doesn't play nice with the CMS.
+The CMS stores media based on the configuration at /admin/config.yml
+~~~
+media_folder: "/new-cft-website/static/img"
+~~~
+
+The CMS keeps all posts and pagers in markdown files across the directory. The media location in the .md file will be whatever was set as the media_folder value when the CMS was used. 
+
+All this means is that if you're using the fancy CMS screens to make updates, it's going to use the value in that file so if the website is hosted in subdirectory, like on a github page without a custom domain, then you will need to find and replace the media path in each of the .md file. Other files don't have this problem because the --pathprefix option on the eleventy command takes care of it.
+
+None of this is of concern if the page is hosted on netlify.
 
 ## Todo
 - [x] Reset styles
@@ -55,9 +68,9 @@ If you're new to coding, we recommend installing:
 - a text editor like [VS Code](https://code.visualstudio.com/)
 - [Git](https://github.com/git-guides/install-git) which is a version control system. This helps people collaborate on projects. If you're new to git, take a look a [Github Git tutorial](https://rogerdudler.github.io/git-guide/)
 
-Feel free to dive in! [Open an issue](https://github.com/CodeForTucson/new-cft-website/issues/new), submit Pull Requests (PRs), or even start your own project!
+Feel free to dive in! [Open an issue](https://github.com/CodeForTucson//issues/new), submit Pull Requests (PRs), or even start your own project!
 
-If you'd like to get your feet wet, take a look at some [good first issues](https://github.com/CodeForTucson/new-cft-website/labels/good%20first%20issue).
+If you'd like to get your feet wet, take a look at some [good first issues](https://github.com/CodeForTucson//labels/good%20first%20issue).
 
 ### Brief Tutorial
 We recommend newcomers to first read an old [guide](https://rogerdudler.github.io/git-guide/). However, the developer community recently agreed to rename the `master` branch to `main`. 
