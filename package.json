@@ -7,8 +7,9 @@
     "watch": "npx eleventy --watch",
     "serve": "concurrently --kill-others \"npx netlify-cms-proxy-server\" \"npx eleventy --serve\"",
     "debug": "DEBUG=* npx eleventy",
-    "build-subdir": "npx eleventy --pathprefix=new-cft-website --output=new-cft-website/docs",
-    "serve-subdir": "npx eleventy --serve --output=new-cft-website/docs --pathprefix=new-cft-website"
+    "build-github": "npx eleventy --pathprefix=new-cft-website --output=docs",
+    "build-subdir": "npx eleventy --pathprefix=new-cft-website --output=new-cft-website/_site",
+    "serve-subdir": "npx eleventy --serve --output=new-cft-website/_site --pathprefix=new-cft-website"
   },
   "repository": {
     "type": "git",
