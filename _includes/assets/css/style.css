@@ -436,6 +436,22 @@ article h3 a{
     width: 100%;
     color: var(--font);
   }
+
+  .three_steps{
+    display:block;
+  }
+
+  .getInvolved article{
+    padding: 2rem;
+  }
+
+  .about article{
+    display: block;
+  }
+
+  .about article h2{
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 750px){
