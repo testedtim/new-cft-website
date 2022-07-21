@@ -3,7 +3,7 @@ backend:
   branch: master # Branch to update (optional; defaults to master)
 
 #This needs to be disabled to work with netlify or there will be no auth
-local_backend: true
+local_backend: false
 
 # Uncomment below to enable drafts
 # publish_mode: editorial_workflow
