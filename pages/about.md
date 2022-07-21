@@ -27,9 +27,8 @@ Founded in 2014, we're a local chapter of [Code for America](https://codeforamer
 The best way to contact us is through our Slack channel or contacting someone on the leadership team below.
 
 * Captains: Dan Stormont 
-* Community Organizer: Rebecca Blakiston
+* Community and Event Organizer: Rebecca Blakiston
 * Design Lead: Mario Vasquez
-* Event Organizer: 
 * Non-Profit/Community Liaison:
 * Data Wranglers: 
 * DevOps:
