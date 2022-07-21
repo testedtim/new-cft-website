@@ -22,13 +22,14 @@ eleventyNavigation:
 ---
 ## Leadership Team
 
-For more information on these roles, see Code for America's Roles within a Local Brigade.
+Founded in 2014, we're a local chapter of [Code for America](https://codeforamerica.org/) located in Tucson, Arizona who put technology to work in service of our communities. Our main work is around volunteer-led and volunteer-run projects, and we invite people from all walks of life to join us at our virtual project nights!
 
-Captains: Dan Stormont and Michelle Hertzfeld
-Storytellers: Maggie Melo, Nick Morrin and Joseph Meyers
-Community Organizers: Maggie Melo, Nick Morrin and Joseph Meyers
-Delivery Lead: Krystal Ying
-Event Organizer: Elliot Ledley
-Non-Profit/Community Liaison: Tzadik Greenberg
-Data Wranglers: Inara Makhmudova, Nick Morrin and Mark Taylor
-DevOps: Colin Scott-Fleming
+The best way to contact us is through our Slack channel or contacting someone on the leadership team below.
+
+* Captains: Dan Stormont 
+* Community Organizer: Rebecca Blakiston
+* Design Lead: Mario Vasquez
+* Event Organizer: 
+* Non-Profit/Community Liaison:
+* Data Wranglers: 
+* DevOps:
