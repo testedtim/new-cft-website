@@ -1,11 +1,14 @@
 ---
 title: Code of Conduct
-metaDescription: This is a sample meta description. If one is not present in your page/post's front matter, the default metadata.desciption will be used instead.
+metaDescription: This is a sample meta description. If one is not present in
+  your page/post's front matter, the default metadata.desciption will be used
+  instead.
 date: 2017-01-01T00:00:00.000Z
 permalink: /codeOfConduct/index.html
+headerText: .
 eleventyNavigation:
   key: Code of Conduct
-  order: 3
+  order: 2
 ---
 This code may be summed up simply: Be Kind. However, since this does not always happen, we have elaborated on this principle below.
 
