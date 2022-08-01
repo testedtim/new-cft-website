@@ -5,7 +5,7 @@ metaDescription: This is a sample meta description. If one is not present in
   instead.
 date: 2017-01-01T00:00:00.000Z
 permalink: /code-of-conduct/index.html
-headerText: Code of Conduct
+headerText: We're committed to providing safe and inclusive experiences for everyone
 eleventyNavigation:
   key: Code of Conduct
   order: 2
