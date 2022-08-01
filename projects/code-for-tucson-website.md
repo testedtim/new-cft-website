@@ -9,13 +9,21 @@ summary: We haven’t had an active website since 2017, so we are building one!
 tags:
   - project
 ---
-Project team: Rebecca Blakiston, Leonardo Echeverria, Mario Vasquez, Caroline Mosley, Chris Ca
+## Project team
 
-Description: We are rebuilding the Code for Tucson website (here it is!) but there will be ongoing work after we launch. 
+* Rebecca Blakiston, project lead, researcher, writer
+* Chris Calmatlas, developer 
+* Leonardo Echeverria, researcher, designer
+* Caroline Mosley, writer, researcher
+* Mario Vasquez, developer, designer
+
+## Description
+
+We are rebuilding the Code for Tucson website (here it is!) and there is ongoing work to evaluate and improve the website.
 
 ## What we have so far
 
-### Some great Prototypes
+### Some great prototypes
 
   ![Prototypes in Figma](/new-cft-website/static/img/prototypes.png "prototypes")
 
