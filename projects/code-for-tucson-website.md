@@ -19,7 +19,7 @@ tags:
 
 ## Description
 
-We are rebuilding the Code for Tucson website (here it is!) and there is ongoing work to evaluate and improve the website.
+We are rebuilding the Code for Tucson website (here it is!) and there is ongoing work to evaluate and improve it.
 
 ## What we have so far
 
