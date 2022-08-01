@@ -25,11 +25,15 @@ We are rebuilding the Code for Tucson website (here it is!) and there is ongoing
 
 ### Some great prototypes
 
-  ![Prototypes in Figma](/new-cft-website/static/img/prototypes.png "prototypes")
+![Prototypes in Figma](/new-cft-website/static/img/prototypes.png "prototypes")
 
 * https://github.com/chris-calmatlas/c4t-netlifycms-Leonardo
 * https://github.com/chris-calmatlas/c4t-netlifycms-mario
 * https://github.com/chris-calmatlas/c4t-netlifycms-draft2
+
+### A content plan
+
+* https://docs.google.com/document/d/1SOjPVgdz91KZnmn0PMWahhDR2ckoYcLE4DnL2fmG7CQ/edit?usp=sharing 
 
 ### A new logo
 
