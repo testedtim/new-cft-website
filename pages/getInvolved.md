@@ -6,8 +6,7 @@ metaDescription: This is a sample meta description. If one is not present in
   instead.
 date: 2017-01-01T00:00:00.000Z
 permalink: /get-involved/index.html
-headerText: We’re looking for experts, learners, and problem solvers to join our
-  project teams
+headerText: We’re looking for experts, learners, and problem solvers to join our efforts.
 eleventyNavigation:
   key: Get Involved
   order: 1
