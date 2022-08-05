@@ -11,3 +11,4 @@ eleventyNavigation:
   key: Get Involved
   order: 1
 ---
+## We’re looking for experts, learners, and problem solvers to join our efforts.
