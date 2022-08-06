@@ -4,7 +4,7 @@ title: Code for Tucson Website
 summary: We haven’t had an active website since 2017, so we are building one!
   Here it is!
 image: /static/img/mac-fingers.jpg
-imgAlt: Someone who can't find the home keys
+imgAlt: two hands on a laptop keyboard
 tags:
   - project
 isPastProject: false
