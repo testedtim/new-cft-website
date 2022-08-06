@@ -8,9 +8,9 @@ summary: Code for Tucson is a Code for America Brigade located in Tucson,
   just developers—they're journalists, lawyers, designers, and interested
   citizens in general. The more community participation, the better. Learn more
   about the CfA Brigade program here.
-layout: layouts/about.njk
-permalink: /about/index.html
+permalink: /about/
 date: 2017-01-01T00:00:00.000Z
+pageHeading: What is Code for Tucson?
 metaDescription: This is a sample meta description. If one is not present in
   your page/post's front matter, the default metadata.desciption will be used
   instead.
@@ -20,15 +20,12 @@ eleventyNavigation:
   key: About
   order: 4
 ---
-## Leadership Team
+## Leadership team
 
-For more information on these roles, see Code for America's Roles within a Local Brigade.
+The best way to contact us is through [our Slack workspace](https://codefortucson.slack.com/), where you can send a direct message to anyone on our leadership team. We are also looking to grow our leadership team, so let us know how you'd like to contribute!
 
-Captains: Dan Stormont and Michelle Hertzfeld
-Storytellers: Maggie Melo, Nick Morrin and Joseph Meyers
-Community Organizers: Maggie Melo, Nick Morrin and Joseph Meyers
-Delivery Lead: Krystal Ying
-Event Organizer: Elliot Ledley
-Non-Profit/Community Liaison: Tzadik Greenberg
-Data Wranglers: Inara Makhmudova, Nick Morrin and Mark Taylor
-DevOps: Colin Scott-Fleming
+* Captain: Dan Stormont 
+* Community and Event Organizer: Rebecca Blakiston
+* Website Lead: Vacant
+* Engineering and DevOps Lead: Vacant
+* \[You could go here!]

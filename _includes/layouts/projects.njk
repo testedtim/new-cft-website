@@ -2,21 +2,41 @@
 layout: layouts/base.njk
 section: projects
 ---
-{{ layoutContent | safe }}
-{% set collectionList = collections[collectionName] %}
-<section>
-<h1>Active Projects</h1>
-	{% for item in collectionList | reverse %}
-        {%if not item.data.isPastProject %}
-            {% include "components/projectListItem.njk" %}
-        {% endif %}
+{% set currentProjects = [] %}
+{% set pastProjects = [] %}
+
+<div class="container">
+    <div class="container content bg-white is-rich-text">
+        {{ layoutContent | safe }}
+    </div>
+</div>        
+
+{% for item in collections[collectionName] | reverse %}
+    {% if item.data.isPastProject %}
+        {% set pastProjects = (pastProjects.push(item), pastProjects) %}
+    {% else %}
+        {% set currentProjects = (currentProjects.push(item), currentProjects) %}
+    {% endif %}
+{% endfor %}
+
+{% if currentProjects %}
+<section class="container content">
+    <h2>Active Projects</h2>
+    <div class="content">
+	{% for item in currentProjects %}
+        {% include "components/projectListItem.njk" %}
 	{% endfor %}
+    </div>
 </section>
-<section>
-<h1>Past Projects</h1>
-	{% for item in collectionList | reverse %}
-        {%if item.data.isPastProject %}
+{% endif %}
+
+{% if pastProjects %}
+<div class="bg-medium">
+    <section class="container content">
+        <h2>Past Projects</h2>
+        {% for item in pastProjects %}
             {% include "components/projectListItem.njk" %}
-        {% endif %}
-	{% endfor %}
-</section>
+        {% endfor %}
+    </section>
+</div>
+{% endif %}

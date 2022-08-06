@@ -1,15 +1,15 @@
 ---
 pastProject: true
-isPastProject: true
 title: Community Share
-image: /new-cft-website/static/img/origami.jpg
-imgAlt: Origami
-summary: Community Share was a project to connect educators and professionals
+summary: "Community Share was a project to connect educators and professionals
   with the goal of “Inspiring our next generation of learners & leaders.” It
   sought to connect volunteers with a local classrooms and find professionals in
-  fields related to lessons to help engage students.
+  fields related to lessons to help engage students. "
+image: /static/img/origami.jpg
+imgAlt: Origami
 tags:
   - project
+isPastProject: true
 ---
 Project Leads: Kristin Wisneski-Blum, Ben Reynwar & Josh Schachter
 

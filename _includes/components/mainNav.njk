@@ -1,11 +1,16 @@
-<nav class="mainNav">
-  <a href="{{ '/' | url }}"><div class="logo"></div></a>  
-  <input id="menuToggle" type="checkbox" />
-  <label class='menuButtonContainer' for="menuToggle">
-    <div class='menuButton'></div>
-  </label>
+<nav class="mainNav" id="site-navigation" aria-label="Primary Navigation">
+  <a href="{{ '/' | url }}">
+    <svg width="234" height="32" aria-label="Code for Tucson" class="head-logo" viewBox="0 0 234 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path id="logo-cactus" d="M20.0074 0C18.9024 0 18.0067 0.895762 18.0067 2.00074V18.5C18.0067 18.9142 17.1706 19.25 16.7562 19.25C16.3418 19.25 15.5057 18.9142 15.5057 18.5L15.5057 7.50055C15.5057 6.67182 14.8339 6 14.0052 6C13.1765 6 12.5046 6.67182 12.5046 7.50055V20.4995C12.5046 21.3282 13.1765 22 14.0052 22H17.2564C17.5552 22 17.8234 21.8691 18.0067 21.6615V29.9993C18.0067 31.1042 18.9024 32 20.0074 32C21.1124 32 22.0081 31.1042 22.0081 29.9993V19.1615C22.1914 19.3691 22.4596 19.5 22.7584 19.5H26.0096C26.8383 19.5 27.5102 18.8282 27.5102 17.9994V5.00055C27.5102 4.17182 26.8383 3.5 26.0096 3.5C25.1809 3.5 24.5091 4.17182 24.5091 5.00055L24.509 16C24.509 16.4142 23.673 16.75 23.2586 16.75C22.8449 16.75 22.0109 16.4153 22.0081 16.0021V2.00074C22.0081 0.89576 21.1124 0 20.0074 0Z" fill="#B8E986"/>
+      <path id="logo-l-angle" d="M8.4884 23.9706L0 15.4853L8.4884 7V11.2426L4.2442 15.4853L8.4884 19.7279V23.9706Z" fill="#C1C1C1"/>
+      <path id="logo-r-angle" d="M31.5116 7L40 15.4853L31.5116 23.9706V19.7279L35.7558 15.4853L31.5116 11.2426V7Z" fill="#C1C1C1"/>
+      <path id="logo-text" d="M57.0352 24.8047C61.4297 24.8047 64.5234 21.9805 64.6758 18.1953L64.6875 18.0664H60.5508L60.5273 18.1953C60.2344 20.082 58.9102 21.2422 57.0469 21.2422C54.6914 21.2422 53.1914 19.2969 53.1914 16.0273V16.0156C53.1914 12.7812 54.6797 10.8477 57.0352 10.8477C59.0039 10.8477 60.2344 12.0898 60.5039 13.8477L60.5273 14.0234H64.6641V13.9062C64.5117 10.1211 61.4531 7.28516 57.0352 7.28516C51.9844 7.28516 48.8086 10.5078 48.8086 16.0273V16.0391C48.8086 21.5586 51.9609 24.8047 57.0352 24.8047ZM72.5742 24.7695C76.5938 24.7695 79.1016 22.3438 79.1016 18.125V18.1016C79.1016 13.9414 76.5469 11.4688 72.5742 11.4688C68.6133 11.4688 66.0469 13.9648 66.0469 18.1016V18.125C66.0469 22.332 68.5312 24.7695 72.5742 24.7695ZM72.5859 21.6172C71.1445 21.6172 70.2656 20.375 70.2656 18.125V18.1016C70.2656 15.8984 71.168 14.6211 72.5742 14.6211C73.9805 14.6211 74.8945 15.8984 74.8945 18.1016V18.125C74.8945 20.3633 74.0039 21.6172 72.5859 21.6172ZM85.4062 24.7695C87.2461 24.7695 88.6406 23.8438 89.2734 22.3203H89.3555V24.5H93.5039V7.58984H89.3555V14H89.2734C88.6289 12.418 87.2344 11.4688 85.4062 11.4688C82.1953 11.4688 80.3203 13.8828 80.3203 18.1133V18.125C80.3203 22.3203 82.2188 24.7695 85.4062 24.7695ZM86.9414 21.3945C85.4766 21.3945 84.5391 20.1406 84.5391 18.125V18.1133C84.5391 16.0742 85.4766 14.8555 86.9414 14.8555C88.3828 14.8555 89.3555 16.0859 89.3555 18.1133V18.125C89.3555 20.1523 88.3945 21.3945 86.9414 21.3945ZM101.637 24.7695C105.703 24.7695 107.309 22.3789 107.695 20.6094L107.73 20.4688H103.98L103.969 20.5273C103.781 21.0547 103.055 21.8164 101.719 21.8164C100.207 21.8164 99.2695 20.7969 99.2227 19.0742H107.801V17.8555C107.801 13.9883 105.352 11.4688 101.496 11.4688C97.6172 11.4688 95.1562 14.0117 95.1562 18.1133V18.125C95.1562 22.25 97.6055 24.7695 101.637 24.7695ZM101.59 14.4219C102.809 14.4219 103.676 15.1953 103.887 16.625H99.2812C99.4922 15.2188 100.371 14.4219 101.59 14.4219ZM115.125 24.5H119.285V14.7852H121.652V11.7383H119.168V11.1875C119.168 10.4492 119.648 10.0156 120.797 10.0156C121.113 10.0156 121.441 10.0273 121.676 10.0742V7.49609C121.219 7.40234 120.41 7.32031 119.684 7.32031C116.344 7.32031 115.125 8.48047 115.125 11V11.7383H113.426V14.7852H115.125V24.5ZM128.707 24.7695C132.727 24.7695 135.234 22.3438 135.234 18.125V18.1016C135.234 13.9414 132.68 11.4688 128.707 11.4688C124.746 11.4688 122.18 13.9648 122.18 18.1016V18.125C122.18 22.332 124.664 24.7695 128.707 24.7695ZM128.719 21.6172C127.277 21.6172 126.398 20.375 126.398 18.125V18.1016C126.398 15.8984 127.301 14.6211 128.707 14.6211C130.113 14.6211 131.027 15.8984 131.027 18.1016V18.125C131.027 20.3633 130.137 21.6172 128.719 21.6172ZM136.84 24.5H141V17.7266C141 15.9102 141.949 14.9492 143.695 14.9492C144.188 14.9492 144.668 15.043 145.02 15.1836V11.6328C144.703 11.5273 144.34 11.4688 143.941 11.4688C142.441 11.4688 141.434 12.3828 141.082 14H141V11.7383H136.84V24.5ZM155.156 24.5H159.445V11.0469H164.109V7.58984H150.492V11.0469H155.156V24.5ZM168.996 24.7695C170.93 24.7695 172.23 23.8555 172.875 22.25H172.957V24.5H177.105V11.7383H172.957V18.9805C172.957 20.3984 172.125 21.3945 170.812 21.3945C169.441 21.3945 168.762 20.5273 168.762 19.0625V11.7383H164.602V19.9531C164.602 22.9766 166.195 24.7695 168.996 24.7695ZM185.227 24.7695C188.906 24.7695 191.145 22.543 191.227 19.5781V19.4961H187.418L187.395 19.6133C187.23 20.832 186.492 21.6172 185.273 21.6172C183.797 21.6172 182.953 20.375 182.953 18.125V18.1133C182.953 15.8984 183.82 14.6211 185.262 14.6211C186.48 14.6211 187.23 15.4414 187.395 16.625L187.406 16.7422H191.227L191.215 16.6602C191.156 13.625 188.789 11.4688 185.191 11.4688C181.219 11.4688 178.734 13.9883 178.734 18.1016V18.1133C178.734 22.25 181.207 24.7695 185.227 24.7695ZM198.375 24.7695C201.879 24.7695 204.27 23.0938 204.27 20.457V20.4453C204.27 18.5352 203.098 17.4805 200.391 16.9414L198.141 16.4961C196.934 16.25 196.547 15.9219 196.547 15.3711V15.3594C196.547 14.6914 197.203 14.2695 198.223 14.2695C199.371 14.2695 200.016 14.8906 200.109 15.6406L200.121 15.7344H203.918L203.906 15.6406C203.871 13.3555 201.914 11.4688 198.223 11.4688C194.73 11.4688 192.551 13.0508 192.551 15.5938V15.6055C192.551 17.5508 193.852 18.8516 196.348 19.332L198.598 19.7773C199.734 20.0117 200.145 20.3281 200.145 20.9023V20.9141C200.145 21.5703 199.477 21.9688 198.375 21.9688C197.156 21.9688 196.5 21.4648 196.301 20.5977L196.277 20.5039H192.246L192.258 20.6094C192.539 23.0938 194.578 24.7695 198.375 24.7695ZM211.887 24.7695C215.906 24.7695 218.414 22.3438 218.414 18.125V18.1016C218.414 13.9414 215.859 11.4688 211.887 11.4688C207.926 11.4688 205.359 13.9648 205.359 18.1016V18.125C205.359 22.332 207.844 24.7695 211.887 24.7695ZM211.898 21.6172C210.457 21.6172 209.578 20.375 209.578 18.125V18.1016C209.578 15.8984 210.48 14.6211 211.887 14.6211C213.293 14.6211 214.207 15.8984 214.207 18.1016V18.125C214.207 20.3633 213.316 21.6172 211.898 21.6172ZM220.02 24.5H224.18V17.2578C224.18 15.8398 225 14.8555 226.324 14.8555C227.684 14.8555 228.375 15.7109 228.375 17.1758V24.5H232.523V16.2852C232.523 13.2617 230.941 11.4688 228.141 11.4688C226.207 11.4688 224.895 12.3828 224.262 13.9883H224.18V11.7383H220.02V24.5Z" fill="white"/>
+    </svg>
+  </a>
+
   {% set navPages = collections.all | eleventyNavigation %}
-  <ul class="navItems">
+  <button type="button" id="navToggle" class="menu-btn">Menu</button>
+  <ul class="navItems clicky-menu" id="navMenu">
   {%- for entry in navPages %}
     <li>
       <a href="{{ entry.url | url }}"{% if entry.url == page.url %} data-current="current item"{% endif %}>{{ entry.title }}</a>
@@ -13,3 +18,215 @@
   {%- endfor %}
   </ul>
 </nav>
+
+<script>
+/**
+ * Object for creating click-triggered navigation submenus
+ *
+ * Latest version, Issues, etc: https://github.com/mrwweb/clicky-menus
+ *
+ * Thanks for the inspiration:
+ * 		- https://www.lottejackson.com/learning/a-reusable-javascript-toggle-pattern
+ * 		- https://codepen.io/lottejackson/pen/yObQRM
+ */
+
+(function() {
+
+	'use strict';
+
+	const ClickyMenus = function( menu ) {
+
+		// DOM element(s)
+		let	container = menu.parentElement,
+			currentMenuItem,
+			i,
+			len;
+
+		this.init = function() {
+			menuSetup();
+			document.addEventListener( 'click', closeOpenMenu );
+
+      const menuBtn = document.getElementById('navToggle');
+      
+      menuBtn.addEventListener( 'keyup', closeOnEscKey );
+      menuBtn.setAttribute( 'aria-controls', 'navMenu' );
+		}
+
+
+		/*===================================================
+		=            Menu Open / Close Functions            =
+		===================================================*/
+		function toggleOnMenuClick( e ) {
+      
+			const button = e.currentTarget;
+
+			// close open menu if there is one
+			if ( currentMenuItem && button !== currentMenuItem ) {
+				toggleSubmenu( currentMenuItem );
+			}
+
+			toggleSubmenu( button );
+
+		};
+
+		function toggleSubmenu( button ) {
+
+			const submenu = document.getElementById( button.getAttribute( 'aria-controls' ) );
+
+			if ( 'true' === button.getAttribute( 'aria-expanded' ) ) {
+
+				button.setAttribute( 'aria-expanded', false );
+				submenu.setAttribute( 'aria-hidden', true );
+				currentMenuItem = false;
+
+			} else {
+
+				button.setAttribute( 'aria-expanded', true );
+				submenu.setAttribute( 'aria-hidden', false );
+				preventOffScreenSubmenu( submenu );
+				currentMenuItem = button;
+
+			}
+
+		};
+
+		function preventOffScreenSubmenu( submenu ) {
+
+			const 	screenWidth =	window.innerWidth ||
+									document.documentElement.clientWidth ||
+									document.body.clientWidth,
+					parent = submenu.offsetParent,
+					menuLeftEdge = parent.getBoundingClientRect().left,
+					menuRightEdge = menuLeftEdge + submenu.offsetWidth;
+
+			if ( menuRightEdge + 32 > screenWidth ) { // adding 32 so it's not too close
+				submenu.classList.add( 'sub-menu--right' );
+			}
+
+		}
+
+		function closeOnEscKey(e) {
+
+			if(	27 === e.keyCode ) {
+
+				// we're in a submenu item
+				if( null !== e.target.closest('ul[aria-hidden="false"]') ) {
+					currentMenuItem.focus();
+					toggleSubmenu( currentMenuItem );
+
+				// we're on a parent item
+				} else if ( 'true' === e.target.getAttribute('aria-expanded') ) {
+					toggleSubmenu( currentMenuItem );
+				}
+
+			}
+
+		}
+
+		function closeOpenMenu( e ) {
+      
+			if ( currentMenuItem && ! e.target.closest( '#' + container.id ) ) {
+				toggleSubmenu( currentMenuItem );
+			} else if (e.target.id == 'navToggle') {
+        menu.classList.toggle('is-visible');
+
+        if ( 'true' === menu.getAttribute( 'aria-expanded' ) ) {
+          menu.setAttribute( 'aria-expanded', false );
+        }
+      }
+
+		};
+
+		/*===========================================================
+		=            Modify Menu Markup & Bind Listeners            =
+		=============================================================*/
+		function menuSetup() {
+
+			menu.classList.remove('no-js');
+
+			menu.querySelectorAll('ul').forEach( ( submenu ) => {
+
+				const menuItem = submenu.parentElement;
+
+				if ( 'undefined' !== typeof submenu ) {
+
+					let button = convertLinkToButton( menuItem );
+
+					setUpAria( submenu, button );
+
+					// bind event listener to button
+					button.addEventListener( 'click', toggleOnMenuClick );
+					menu.addEventListener( 'keyup', closeOnEscKey );
+
+				}
+
+			});
+
+		};
+
+		/**
+		 * Why do this? See https://justmarkup.com/articles/2019-01-21-the-link-to-button-enhancement/
+		 */
+		function convertLinkToButton( menuItem ) {
+
+			const 	link = menuItem.getElementsByTagName( 'a' )[0],
+					linkHTML = link.innerHTML,
+					linkAtts = link.attributes,
+					button = document.createElement( 'button' );
+
+			if( null !== link ) {
+
+				// set button content and attributes
+				button.innerHTML = linkHTML.trim();
+				for( i = 0, len = linkAtts.length; i < len; i++ ) {
+					let attr = linkAtts[i];
+					if( 'href' !== attr.name ) {
+						button.setAttribute( attr.name, attr.value );
+					}
+				}
+
+				menuItem.replaceChild( button, link );
+
+			}
+
+			return button;
+
+		}
+
+		function setUpAria( submenu, button ) {
+
+			const submenuId = submenu.getAttribute( 'id' );
+
+			let id;
+			if( null === submenuId ) {
+				id = button.textContent.trim().replace(/\s+/g, '-').toLowerCase() + '-submenu';
+			} else {
+				id = menuItemId + '-submenu';
+			}
+
+			// set button ARIA
+			button.setAttribute( 'aria-controls', id );
+			button.setAttribute( 'aria-expanded', false );
+
+			// set submenu ARIA
+			submenu.setAttribute( 'id', id );
+			submenu.setAttribute( 'aria-hidden', true );
+
+		}
+
+	}
+
+	/* Create a ClickMenus object and initiate menu for any menu with .clicky-menu class */
+	document.addEventListener('DOMContentLoaded', function(){
+		const menus = document.querySelectorAll( '.clicky-menu' );
+
+		menus.forEach( menu => {
+
+			let clickyMenu = new ClickyMenus(menu);
+			clickyMenu.init();
+
+		});
+	});
+
+}());
+</script>

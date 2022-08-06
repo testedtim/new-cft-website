@@ -1,31 +1,17 @@
 backend:
   name: git-gateway
-  branch: master # Branch to update (optional; defaults to master)
+  branch: main # Branch to update (optional; defaults to master)
 
-#This needs to be disabled to work with netlify or there will be no auth
-local_backend: true
+# This needs to be disabled to work with netlify or there will be no auth
+local_backend: false
 
 # Uncomment below to enable drafts
 # publish_mode: editorial_workflow
 
 #Update this when the page is no longer hosted in a subdirectory
-media_folder: "/new-cft-website/static/img" # Media files will be stored in the repo under images/uploads
+media_folder: "/static/img" # Media files will be stored in the repo under images/uploads
 
 collections:
-  - name: "projects" # Used in routes, e.g., /admin/collections/blog
-    label: "Project" # Used in the UI
-    folder: "projects" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - { label: "Past Project", name: "isPastProject", widget: "boolean", default: false, required: false }
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Preview Image", name: "image", widget: "image", required: false}
-      - { label: "Preview Image Alt Text", name: "imgAlt", widget: "string", required: false}
-      - { label: "Summary", name: "summary", widget: "text", required: false }
-      - { label: "Tags", name: "tags", widget: "list", default: ["project"] }
-      - { label: "Body", name: "body", widget: "markdown", required: false }
-  # Our pages e.g. About
   - name: "pages"
     label: "Page"
     folder: "pages"
@@ -33,16 +19,59 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Permalink", name: "permalink", widget: "string", default: "/{title}/index.html" }
-      - { label: "Header Text", name: "headerText", widget: "string", default: "{title}" }
+      - { label: "Page Heading", name: "pageHeading", widget: "string", default: "{title}", required: false }
       - { label: "Summary", name: "summary", widget: "string", required: false}
+      - { label: "Body", name: "body", widget: "markdown", required: false }
+      - { label: 'Use dark content', name: 'useDark', widget: 'boolean', default: false }
+      - label: 'Card Grid'
+        name: 'cardGrid'
+        widget: 'list'
+        label_singular: 'Card'
+        max: 4
+        fields:
+          - { label: 'Image', name: 'image', widget: 'image' }
+          - { label: 'Remove Image Padding', name: 'noPadding', widget: 'boolean', default: false }
+          - { label: 'Image Alt Text', name: 'altText', widget: 'string' }
+          - { label: 'Heading', name: 'heading', widget: 'string' }
+          - { label: 'Summary', name: 'summary', widget: 'text' }
+          - { label: "Button Text", name: "btnText", widget: "string", required: false }
+          - { label: "Button Link", name: "btnLink", widget: "string", required: false }
+      - label: 'Section Blocks'
+        name: 'sections'
+        widget: 'list'
+        label_singular: 'section'
+        max: 4
+        fields:
+          - { label: 'Image', name: 'image', widget: 'image', required: false }
+          - { label: 'Image Alt Text', name: 'altText', widget: 'string', required: false }
+          - { label: 'Heading', name: 'heading', widget: 'string' }
+          - { label: 'Body', name: 'body', widget: 'text' }
+          - { label: "Button Text", name: "btnText", widget: "string", required: false }
+          - { label: "Button Link", name: "btnLink", widget: "string", required: false }
+      - label: "Page Header Style"
+        name: "pageHeadStyle"
+        widget: "select"
+        options:
+          - { label: "Large: w/ default photo", value: "large-default" }
+          - { label: "Short: w/ default photo", value: "short-default" }
+        default: ["large-default"]
+      - { label: "Permalink", name: "permalink", widget: "string", default: "/{title}" }
       - label: "Navigation" # https://www.11ty.dev/docs/plugins/navigation/
         name: "eleventyNavigation"
         widget: "object"
         fields:
-          - { label: "Key", name: "key", widget: "string", default: "{title}", required: false}
+          - { label: "Nav", name: "key", widget: "string", default: "{title}", required: false}
           - { label: "Order", name: "order", widget: "number", default: 0, required: false}
-        required: false
+  - name: "projects" # Used in routes, e.g., /admin/collections/blog
+    label: "Projects" # Used in the UI
+    folder: "projects" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Summary", name: "summary", widget: "text", required: false }
+      - { label: "Preview Image", name: "image", widget: "image", required: false}
+      - { label: "Preview Image Alt Text", name: "imgAlt", widget: "string", required: false}
       - { label: "Body", name: "body", widget: "markdown", required: false }
-      - { label: "Include Collection List?", name: "hasCollection", widget: "boolean", required: false }
-      - { label: "Tags to Include in collection", name: "collectionName", widget: "string", required: false }
+      - { label: "Tags", name: "tags", widget: "list", default: ["project"] }
+      - { label: "Past Project", name: "isPastProject", widget: "boolean", default: false, required: false }

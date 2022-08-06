@@ -2,9 +2,14 @@
 layout: layouts/base.njk
 section: page
 ---
-<article>
-    {{ layoutContent | safe }}
-    {% if hasCollection and collectionName %}
-        {% include "components/collectionList.njk" %}
-    {% endif %}
-</article>
+{% if layoutContent %}
+<div class="container">
+    <div class="container content {% if not useDark %}bg-white{% endif %} is-rich-text">
+        {{ layoutContent | safe }}
+    </div>
+</div>
+{% endif %}
+
+{% if displayProjects and collectionName %}
+    {% include "components/collectionList.njk" %}
+{% endif %}

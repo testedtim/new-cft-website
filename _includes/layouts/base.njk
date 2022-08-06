@@ -1,27 +1,80 @@
 <!doctype html>
-<html {% if section %} data-current="{{ section }}"{% endif %} lang="en">
+<html {% if section %} data-current="{{ section }}"{% endif %} lang="en-US">
 
 	{% include "components/head.njk" %}
 
 	<body>
-		<div class="vp">
-			{% include "components/mainNav.njk" %}
-			<header>
-				<h1>{{ title }}</h1>
-				{% if headerText %}
-				<p>{{ headerText }}</p>
-				{% endif %}
-			</header>
-		</div>
+		<header class="pageHead {{ pageHeadStyle }}">
+			<div class="nav-wrap">
+				{% include "components/mainNav.njk" %}
+			</div>
+		</header>
+		<main id="main">
+			<section>
+				<div class="container content pullUp">
+					<h1>{{ title }}</h1>
+				</div>
 
-		<main>
-			<section class="base">
+				{# if pageHeading or summary %}
+				<div class="bg-medium">
+					<div class="container horizontal">
+						{% if pageHeading %}
+							<h2 class="lg">{{ pageHeading }}</h2>
+						{% endif %}
+						{% if summary %}
+							<p>{{ summary }}</p>
+						{% endif %}
+					</div>
+				</div>
+				{% endif #}
+
 				{{ layoutContent | safe }}
+				
 			</section>
-		</main>
-		
-		{% include "components/mainFooter.njk" %}
 
+			{% if cardGrid %}
+			<section class="card-grid">
+				{% for card in cardGrid %}
+				<article class="card bg-white">
+					<div class="card-head{% if noPadding %} noPad{% endif %}">
+						<img src="{{ card.image | url }}" alt="{{ card.altText }}">
+					</div>
+					<div class="card-body">
+						<h3>{{ card.heading }}</h3>
+						<p>{{ card.summary }}</p>
+					</div>
+					{% if card.btnLink %}
+					<div class="card-foot">
+						<a class="button" href="{{ card.btnLink | url }}">{{ card.btnText }}</a>
+					</div>
+					{% endif %}
+				</article>
+				{% endfor %}
+			</section>
+			{% endif %}
+
+
+			{% if sections %}
+			<section class="bg-medium">
+				{% for section in sections %}
+					{% if section.image %}
+					<div class="">
+						<img src="{{ section.image | url }}" alt="{{ section.altText }}">
+					</div>
+					{% endif %}
+					<div class="">
+						<h2>{{ section.heading }}</h2>
+						<p>{{ section.body }}</p>
+					</div>
+					<div class="">
+						<a class="button" href="{{ section.btnLink | url }}">{{ section.btnText }}</a>
+					</div>
+				{% endfor %}
+			</section>
+			{% endif %}
+		</main>
+
+		{% include "components/mainFooter.njk" %}
 	</body>
 
 </html>

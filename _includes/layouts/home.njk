@@ -1,39 +1,72 @@
+---
+section: page
+---
 <!doctype html>
-<html {% if section %} data-current="{{ section }}"{% endif %} lang="en">
+<html {% if section %} data-current="{{ section }}"{% endif %} lang="en-US">
 
 	{% include "components/head.njk" %}
 
-	<body class="home">
-		<div class="vp">
-			{% include "components/mainNav.njk" %}
-			<header>
-				{% if headerText %}
-				<p>{{ headerText }}</p>
+	<body>
+		<header class="pageHead">
+			<div class="nav-wrap">
+				{% include "components/mainNav.njk" %}
+			</div>
+		</header>
+		<main id="main">
+			<section class="container mainFeature bg-white">
+				<h1 class="show-for-sr">{{ title }}</h1>
+
+				{% if pageHeading %}
+					<h2>{{ pageHeading }}</h2>
 				{% endif %}
-				<h1>{{ metadata.title }}</h1>
+				
 				{{ layoutContent | safe }}
-			</header>
-		</div>
-			<main>
-				<section>
-					<article>
-						<div>
-							<h2>Join the Conversation</h2>
-							<p>Sign up for our Slack workspace. We primarily use Slack for connecting and communicating. Introduce yourself, then join channels you are interested in.</p>
-							<a class="button" href="https://codefortucson.slack.com/">Sign up for Slack</a>
+				
+			</section>
+
+			<section class="container">
+
+				{% if cardGrid %}
+				<div class="card-grid">
+					{% for card in cardGrid %}
+					<article class="card bg-white">
+						<div class="card-head{% if noPadding %} noPad{% endif %}">
+							<img src="{{ card.image | url }}" alt="{{ card.altText }}">
 						</div>
-						<img src="{{ '/static/img/slack.jpg' | url }}" alt="Slack">
-					</article>
-					<article>
-						<div>
-							<h2>Attend an Event</h2>
-							<p>We host virtual “hacknights” twice a month to discuss projects, collaborate, and learn from each other. Newcomers welcome, regardless of technical ability.</p>
-							<a class="button" href="https://www.meetup.com/Code-for-Tucson/events/calendar/">RSVP on Meetup</a>
+						<div class="card-body">
+							<h3>{{ card.heading }}</h3>
+							<p>{{ card.summary }}</p>
 						</div>
-						<img src="{{ '/static/img/meetup.jpg' | url }}" alt="Meetup">
+						<div class="card-foot">
+							<a class="button" href="{{ card.btnLink | url }}">{{ card.btnText }}</a>
+						</div>
 					</article>
-				</section>
-			</main>
+					{% endfor %}
+				</div>
+				{% endif %}
+
+			</section>
+
+			{% if sections %}
+			<section class="bg-medium">
+				{% for section in sections %}
+					{% if section.image %}
+					<div class="">
+						<img src="{{ section.image | url }}" alt="{{ section.altText }}">
+					</div>
+					{% endif %}
+					<div class="">
+						<h2>{{ section.heading }}</h2>
+						<p>{{ section.body }}</p>
+					</div>
+					<div class="">
+						<a class="button" href="{{ section.btnLink | url }}">{{ section.btnText }}</a>
+					</div>
+				{% endfor %}
+			</section>
+			{% endif %}
+		</main>
+
 		{% include "components/mainFooter.njk" %}
 	</body>
 

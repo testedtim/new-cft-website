@@ -1,8 +1,33 @@
 ---
+summary: summary
 layout: layouts/home.njk
-title: Home
-date: 2016-01-01T00:00:00.000Z
+sections: []
 permalink: /
+date: 2016-01-01T00:00:00.000Z
+title: Home
+pageHeading: We harness technology, data, and design to tackle local issues and
+  make Tucson a better place to live.
+cardGrid:
+  - heading: Join the conversation
+    summary: Sign up for our Slack workspace. We primarily use Slack for connecting
+      and communicating. Introduce yourself, then join channels you are
+      interested in.
+    btnText: Sign up for Slack
+    noPadding: false
+    btnLink: /
+    altText: Slack logo
+    link: /
+    image: /static/img/slack-w-logo.png
+    buttonText: Sign up for Slack
+  - summary: We host virtual meetups twice a month to discuss projects, collaborate,
+      and learn from each other. Newcomers welcome, regardless of technical
+      ability.
+    heading: Attend an event
+    btnText: RSVP on Meetup
+    btnLink: /
+    altText: Meetup logo
+    image: /static/img/meetup-logo.png
+    noPadding: false
 headerText: We harness technology, data, and design to tackle local issues and
   make Tucson a better place to live.
 ---
