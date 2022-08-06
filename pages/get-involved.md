@@ -1,6 +1,6 @@
 ---
 summary: We’re looking for experts, learners, and problem solvers to join our efforts.
-pageHeadStyle: large-default
+pageHeadStyle: short-default
 permalink: /get-involved/
 date: 2017-01-01T00:00:00.000Z
 pageHeading: ""
