@@ -1,10 +1,11 @@
 ---
-pastProject: false
-title: Code for Tucson Website
 summary: We haven’t had an active website since 2017, so we are building one!
   Here it is!
-image: /static/img/mac-fingers.jpg
 imgAlt: two hands on a laptop keyboard
+pageHeadStyle: short-default
+pastProject: false
+title: Code for Tucson Website
+image: /static/img/mac-fingers.jpg
 tags:
   - project
 isPastProject: false
