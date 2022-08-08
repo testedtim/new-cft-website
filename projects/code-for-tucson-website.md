@@ -13,7 +13,7 @@ isPastProject: false
 ## Project team
 
 * Rebecca Blakiston, project lead, researcher, writer
-* Chris Calmatlas, developer 
+* Chris Calmatlas, developer
 * Leonardo Echeverria, researcher, designer
 * Caroline Mosley, writer, researcher
 * Mario Vasquez, developer, designer
