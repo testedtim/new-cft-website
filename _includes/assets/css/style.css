@@ -38,7 +38,7 @@
 
   --feature-x-max: 780px;
   --card-x-min: 280px;
-  --card-x-max: 430px;
+  --card-x-max: 365px;
 
   --content-x-max: 900px;
   --container-x-max: 1200px;
@@ -248,7 +248,7 @@ main.container {
 .card-grid {
   margin: 0 auto;
   padding-bottom: var(--container-y-lg-padding);
-  max-width: var(--container-x-sm-max);
+  max-width: var(--container-x-max);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -256,8 +256,9 @@ main.container {
 @media all and (min-width: 650px) {
   .card-grid {
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: normal;
-    justify-content: space-between;
+    justify-content: center;
   }
 }
 .card {
