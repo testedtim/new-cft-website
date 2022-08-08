@@ -54,7 +54,7 @@ collections:
         options:
           - { label: "Large: w/ default photo", value: "large-default" }
           - { label: "Short: w/ default photo", value: "short-default" }
-        default: ["large-default"]
+        default: ["short-default"]
       - { label: "Permalink", name: "permalink", widget: "string", default: "/{title}" }
       - label: "Navigation" # https://www.11ty.dev/docs/plugins/navigation/
         name: "eleventyNavigation"
@@ -72,6 +72,13 @@ collections:
       - { label: "Summary", name: "summary", widget: "text", required: false }
       - { label: "Preview Image", name: "image", widget: "image", required: false}
       - { label: "Preview Image Alt Text", name: "imgAlt", widget: "string", required: false}
+      - label: "Page Header Style"
+        name: "pageHeadStyle"
+        widget: "select"
+        options:
+          - { label: "Large: w/ default photo", value: "large-default" }
+          - { label: "Short: w/ default photo", value: "short-default" }
+        default: ["short-default"]
       - { label: "Body", name: "body", widget: "markdown", required: false }
       - { label: "Tags", name: "tags", widget: "list", default: ["project"] }
       - { label: "Past Project", name: "isPastProject", widget: "boolean", default: false, required: false }
