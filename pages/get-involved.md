@@ -11,18 +11,24 @@ cardGrid:
     heading: Step 1
     summary: "Join our Slack channel: Slack is where we get to know each other and
       work together. Come and introduce yourself!"
+    btnText: Join Slack
+    btnLink: https://codefortucson.slack.com/
   - noPadding: false
     image: /static/img/new-logo.jpg
     summary: "Find a project: We have multiple projects in the work needing people
       of any background and skills. Look for one you’re interested in!"
     heading: Step 2
     altText: Code for Tucson logo
+    btnLink: /projects/
+    btnText: Browse projects
   - noPadding: false
     image: /static/img/meetup-logo.png
     altText: Meetup logo
     heading: Step 3
     summary: "Come to a meetup: We typically meet every 2 weeks on Wednesday night.
       It's a great place to find a team and discuss what you're interested in"
+    btnLink: https://www.meetup.com/Code-for-Tucson/
+    btnText: Join our next meetup
 metaDescription: This is a sample meta description. If one is not present in
   your page/post's front matter, the default metadata.desciption will be used
   instead.
