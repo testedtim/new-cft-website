@@ -62,6 +62,7 @@ collections:
         fields:
           - { label: "Nav", name: "key", widget: "string", default: "{title}", required: false}
           - { label: "Order", name: "order", widget: "number", default: 0, required: false}
+      - { label: "Meta Description", name: "metaDescription", widget: "text", default: "", required: false }
   - name: "projects" # Used in routes, e.g., /admin/collections/blog
     label: "Projects" # Used in the UI
     folder: "projects" # The path to the folder where the documents are stored
@@ -82,3 +83,4 @@ collections:
       - { label: "Body", name: "body", widget: "markdown", required: false }
       - { label: "Tags", name: "tags", widget: "list", default: ["project"] }
       - { label: "Past Project", name: "isPastProject", widget: "boolean", default: false, required: false }
+      - { label: "Meta Description", name: "metaDescription", widget: "text", default: "", required: false }

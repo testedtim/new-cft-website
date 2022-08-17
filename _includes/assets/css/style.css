@@ -605,7 +605,10 @@ a:focus-visible {
   color: var(--bg-white);
   border: 1.2px solid var(--border-color-dark);
   border-radius: var(--border-radius);
-  padding: 10px 20px;
+  padding: 6px 20px 9px 20px;
+  font-size: 1.125rem;
+  font-weight: 500;
+  letter-spacing: .5px;
   text-decoration: none;
   text-align: center;
   transition: background-color .2s ease-out;
