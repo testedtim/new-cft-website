@@ -56,6 +56,7 @@ collections:
           - { label: "Short: w/ default photo", value: "short-default" }
         default: ["short-default"]
       - { label: "Permalink", name: "permalink", widget: "string", default: "/{title}" }
+      - { label: "Meta Description", name: "metaDescription", widget: "text", default: "", required: false }
       - label: "Navigation" # https://www.11ty.dev/docs/plugins/navigation/
         name: "eleventyNavigation"
         widget: "object"
@@ -82,3 +83,4 @@ collections:
       - { label: "Body", name: "body", widget: "markdown", required: false }
       - { label: "Tags", name: "tags", widget: "list", default: ["project"] }
       - { label: "Past Project", name: "isPastProject", widget: "boolean", default: false, required: false }
+      - { label: "Meta Description", name: "metaDescription", widget: "text", default: "", required: false }
