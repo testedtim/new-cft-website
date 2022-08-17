@@ -1,12 +1,13 @@
 ---
-pastProject: true
-title: Community Share
 summary: "Community Share was a project to connect educators and professionals
   with the goal of “Inspiring our next generation of learners & leaders.” It
   sought to connect volunteers with a local classrooms and find professionals in
   fields related to lessons to help engage students. "
-image: /static/img/origami.jpg
 imgAlt: Origami
+pageHeadStyle: short-default
+pastProject: true
+title: Community Share
+image: /static/img/origami.jpg
 tags:
   - project
 isPastProject: true

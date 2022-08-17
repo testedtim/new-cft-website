@@ -1,5 +1,6 @@
 ---
 summary: summary
+pageHeadStyle: large-default
 layout: layouts/home.njk
 sections: []
 permalink: /
@@ -14,7 +15,7 @@ cardGrid:
       interested in.
     btnText: Sign up for Slack
     noPadding: false
-    btnLink: /
+    btnLink: https://codefortucson.slack.com
     altText: Slack logo
     link: /
     image: /static/img/slack-w-logo.png
@@ -24,11 +25,12 @@ cardGrid:
       ability.
     heading: Attend an event
     btnText: RSVP on Meetup
-    btnLink: /
+    btnLink: https://www.meetup.com/Code-for-Tucson/
     altText: Meetup logo
     image: /static/img/meetup-logo.png
     noPadding: false
 headerText: We harness technology, data, and design to tackle local issues and
   make Tucson a better place to live.
+useDark: false
 ---
 We're a local brigade of the national [Code for America](https://codeforamerica.org/) that puts technology to work in service of our communities. You don't need to be a coder to participate. Volunteers from all walks of life are invited to join us!

@@ -5,6 +5,7 @@ summary: A website that shares the joys of living in Tucson and how to acclimate
   and thrive in our desert town.
 image: /static/img/cactus.jpg
 imgAlt: Cacti at sunset
+pageHeadStyle: short-default
 tags:
   - project
 ---
