@@ -16,8 +16,14 @@ cardGrid:
     btnLink: https://codefortucson.slack.com/
   - noPadding: false
     image: /static/img/new-logo.jpg
-    summary: "Find a project: We have multiple projects in the work needing people
-      of any background and skills. Look for one you’re interested in!"
+    summary: >
+      Find a project. Our main work is around volunteer-led and volunteer-run
+      projects. Explore past and active projects from the Code for Tucson team.
+      We have multiple projects in the works needing people of any background
+      and skills. Look for one you’re interested in!
+
+
+      We also invite you to propose new projects that align with our mission. You can propose a project on Slack or at one of our events.
     heading: Step 2
     altText: Code for Tucson logo
     btnLink: /projects/
