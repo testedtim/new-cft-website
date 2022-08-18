@@ -40,6 +40,7 @@ cardGrid:
       regardless of technical ability. 
     btnLink: https://www.meetup.com/Code-for-Tucson/
     btnText: Join our next meetup
+sections: []
 pageHeadStyle: short-default
 permalink: /get-involved/
 date: 2017-01-01T00:00:00.000Z
