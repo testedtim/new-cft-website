@@ -8,6 +8,15 @@
 			<div class="nav-wrap">
 				{% include "components/mainNav.njk" %}
 			</div>
+			<picture class="hero__wrap">
+				<source media="(max-width: 640px)"
+					srcset="">
+				<source media="(max-width: 1024px)"
+					srcset="">
+				<source media="(max-width: 1400px)"
+					srcset="">
+				<img loading="lazy" src="{{ '/static/img/bg.jpg' | url }}" alt="">
+			</picture>
 		</header>
 		<main id="main">
 			<section>

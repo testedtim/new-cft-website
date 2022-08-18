@@ -188,7 +188,7 @@ a:hover {
 .horizontal p {
   line-height: 2;
 }
-main {
+body > * {
   background-color: var(--bg-dark);
   position: relative;
   z-index: 900;
@@ -582,16 +582,35 @@ a:focus-visible {
 /*above the fold*/
 .pageHead {
   height: 98vh;
-  background-image: url("{{ '/static/img/bg.jpg' | url }}");
-  background-size: cover;
-  background-repeat: no-repeat;
   color: var(--light-text);
-  mask: linear-gradient(0deg, #FFF0, 5rem, #FFFF 15rem);
 }
 .pageHead.short-default {
   height: 45vh;
 }
+
+.hero__wrap {
+  display: block;
+  height: 100%;
+  mask: linear-gradient(0deg,#FFF0 0%, #FFFE 45%, #FFF 50%);
+}
+.hero__wrap img {
+  display: block;
+  min-width: 100%;
+  min-height: 100%;
+  max-width: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  object-fit: cover;
+  transform: translate(-50%,-50%);
+  margin-top: 76px;
+}
+
 .nav-wrap {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  width: calc(100% - 2rem);
   display: flex;
   justify-content: center;
   background-color: var(--dark-text);
