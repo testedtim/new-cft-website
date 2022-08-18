@@ -1,18 +1,18 @@
 ---
+title: About us
+pageHeading: What is Code for Tucson?
 summary: Founded in 2014, we're a local chapter of Code for America located in
   Tucson, Arizona who put technology to work in service of our communities. Our
   main work is around volunteer-led and volunteer-run projects, and we invite
   people from all walks of life to join us at our virtual project nights!
+useDark: false
 pageHeadStyle: short-default
 permalink: /about/
 date: 2017-01-01T00:00:00.000Z
-pageHeading: What is Code for Tucson?
 metaDescription: This is a sample meta description. If one is not present in
   your page/post's front matter, the default metadata.desciption will be used
   instead.
-title: About us
 headerText: What is code for Tucson?
-useDark: false
 eleventyNavigation:
   key: About
   order: 4
@@ -23,6 +23,6 @@ The best way to contact us is through [our Slack workspace](https://codefortucso
 
 * Captain: Dan Stormont 
 * Community and Event Organizer: Rebecca Blakiston
-* Website Lead: Vacant
+* Website Lead: Mario Vasquez
 * Engineering and DevOps Lead: Vacant
 * \[You could go here!]
