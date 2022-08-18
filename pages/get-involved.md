@@ -1,7 +1,11 @@
 ---
+summary: We’re looking for experts, learners, and problem solvers to join our efforts.
+sections: []
+pageHeadStyle: short-default
+permalink: /get-involved/
+date: 2017-01-01T00:00:00.000Z
 title: Get Involved
 pageHeading: ""
-summary: We’re looking for experts, learners, and problem solvers to join our efforts.
 useDark: true
 cardGrid:
   - noPadding: false
@@ -32,13 +36,14 @@ cardGrid:
     image: /static/img/meetup-logo.png
     altText: Meetup logo
     heading: Step 3
-    summary: "Come to a meetup: We typically meet every 2 weeks on Wednesday night.
-      It's a great place to find a team and discuss what you're interested in"
+    summary: >
+      Come to a meetup. We host virtual project nights twice a month to discuss
+      projects, collaborate, and learn from each other. We post events and
+      manage RSVPs through our Meetup group (hosted through Meetup.com). Join
+      Meetup to get notified when we announce a new event. Newcomers welcome,
+      regardless of technical ability. 
     btnLink: https://www.meetup.com/Code-for-Tucson/
     btnText: Join our next meetup
-pageHeadStyle: short-default
-permalink: /get-involved/
-date: 2017-01-01T00:00:00.000Z
 metaDescription: This is a sample meta description. If one is not present in
   your page/post's front matter, the default metadata.desciption will be used
   instead.
@@ -46,4 +51,4 @@ eleventyNavigation:
   key: Get Involved
   order: 1
 ---
-> ## We’re looking for experts, learners, and problem solvers to join our efforts.
+## We’re looking for experts, learners, and problem solvers to join our efforts.
