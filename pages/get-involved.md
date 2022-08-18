@@ -1,16 +1,17 @@
 ---
-summary: We’re looking for experts, learners, and problem solvers to join our efforts.
-pageHeadStyle: short-default
-permalink: /get-involved/
-date: 2017-01-01T00:00:00.000Z
+title: Get Involved
 pageHeading: ""
+summary: We’re looking for experts, learners, and problem solvers to join our efforts.
+useDark: true
 cardGrid:
   - noPadding: false
     image: /static/img/slack-w-logo.png
     altText: Slack logo
     heading: Step 1
-    summary: "Join our Slack channel: Slack is where we get to know each other and
-      work together. Come and introduce yourself!"
+    summary: "Slack is a free online messaging platform, and we use our Slack
+      workspace for connecting and communicating outside events. Sign up,
+      introduce yourself, then join channels you are interested in. Any
+      questions about us? Feel free to ask in our #general channel!"
     btnText: Join Slack
     btnLink: https://codefortucson.slack.com/
   - noPadding: false
@@ -29,11 +30,12 @@ cardGrid:
       It's a great place to find a team and discuss what you're interested in"
     btnLink: https://www.meetup.com/Code-for-Tucson/
     btnText: Join our next meetup
+pageHeadStyle: short-default
+permalink: /get-involved/
+date: 2017-01-01T00:00:00.000Z
 metaDescription: This is a sample meta description. If one is not present in
   your page/post's front matter, the default metadata.desciption will be used
   instead.
-title: Get Involved
-useDark: true
 eleventyNavigation:
   key: Get Involved
   order: 1
