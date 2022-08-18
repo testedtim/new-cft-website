@@ -19,6 +19,7 @@
   --bg-white:rgb(255, 255, 255);
   --bg-dark: rgb(1, 17, 30);
   --bg-medium: rgb(10, 41, 67);
+  --bg-gray-blue: rgb(34, 61, 79);
 
   --primary-accent: rgb(28,138,142);
   --text-on-dark: rgb(255,255,255);
@@ -187,6 +188,11 @@ a:hover {
 .horizontal p {
   line-height: 2;
 }
+main {
+  background-color: var(--bg-dark);
+  position: relative;
+  z-index: 900;
+}
 main.container {
   padding-top: 0;
 }
@@ -333,6 +339,10 @@ main.container {
 
 
 .pageFooter {
+  position: sticky;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
   background-color: var(--bg-white);
   display: flex;
   flex-direction: column;
@@ -627,21 +637,27 @@ a:focus-visible {
   padding: 0;
   display: flex;
   justify-content: space-between;
+  gap: 1rem;
   list-style: none;
 }
 
 .socialLinks li {
-  border-left: solid .1rem var(--text-on-light);
   padding: 0 .5rem;
 }
 
 .socialLinks li:first-child {
   border: none;
 }
-
-.socialLinks li a{
+.socialLinks a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .5rem;
   color: var(--text-on-light);
   text-decoration: none;
+}
+.socialIcon {
+  fill: var(--bg-dark);
 }
 
 .show-for-sr,
