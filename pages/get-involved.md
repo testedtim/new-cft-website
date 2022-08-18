@@ -8,10 +8,10 @@ cardGrid:
     image: /static/img/slack-w-logo.png
     altText: Slack logo
     heading: Step 1
-    summary: "Slack is a free online messaging platform, and we use our Slack
-      workspace for connecting and communicating outside events. Sign up,
-      introduce yourself, then join channels you are interested in. Any
-      questions about us? Feel free to ask in our #general channel!"
+    summary: "Join our Slack workspace. Slack is a free online messaging platform,
+      and we use our Slack workspace for connecting and communicating outside
+      events. Sign up, introduce yourself, then join channels you are interested
+      in. Any questions about us? Feel free to ask in our #general channel!"
     btnText: Join Slack
     btnLink: https://codefortucson.slack.com/
   - noPadding: false
