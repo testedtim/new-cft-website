@@ -81,6 +81,5 @@ collections:
           - { label: "Short: w/ default photo", value: "short-default" }
         default: ["short-default"]
       - { label: "Body", name: "body", widget: "markdown", required: false }
-      - { label: "Tags", name: "tags", widget: "list", default: ["project"] }
       - { label: "Past Project", name: "isPastProject", widget: "boolean", default: false, required: false }
       - { label: "Meta Description", name: "metaDescription", widget: "text", default: "", required: false }
