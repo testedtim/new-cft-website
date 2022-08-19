@@ -9,9 +9,8 @@ useDark: false
 pageHeadStyle: short-default
 permalink: /about/
 date: 2017-01-01T00:00:00.000Z
-metaDescription: This is a sample meta description. If one is not present in
-  your page/post's front matter, the default metadata.desciption will be used
-  instead.
+metaDescription: We're a local chapter of Code for America located in Tucson,
+  Arizona who put technology to work in service of our communities.
 headerText: What is code for Tucson?
 eleventyNavigation:
   key: About
