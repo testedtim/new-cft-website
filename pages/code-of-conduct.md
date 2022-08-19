@@ -1,8 +1,8 @@
 ---
 title: Code of Conduct
-metaDescription: This is a sample meta description. If one is not present in
-  your page/post's front matter, the default metadata.desciption will be used
-  instead.
+metaDescription: Code for Tucson is committed to providing inclusive and safe
+  experiences for everyone. Together, we make this a community we're proud to be
+  a part of.
 date: 2017-01-01T00:00:00.000Z
 useDark: false
 pageHeadStyle: short-default
@@ -11,7 +11,7 @@ eleventyNavigation:
   key: Code of Conduct
   order: 3
 ---
-This code may be summed up simply: Be Kind. However, since this does not always happen, we have elaborated on this principle below.
+This code may be summed up simply: be kind. However, since this does not always happen, we have elaborated on this principle below.
 
 ## What is this?
 
@@ -49,7 +49,7 @@ Captains may take any of the following actions, or any other appropriate action,
 * Team Realignment: Members may be asked to work on a different project. This action shall not be used as a punitive measure against the affected party.
 * Expulsion: In extreme situations, the offending party will be barred from future Code for Tucson events.
 
-## Contributing to This Code
+## Contributing to this Code
 
 This is a living document that was forked from Code for DC, and is ultimately owned by the Code for Tucson community. We are interested in your comments and suggestions! You can contribute to the code by opening an issue or pull request on this repository, or by contacting a Captain.
 This code and other documents in this repository are dedicated to the public domain under a CC0 license. By contributing to this repository, you agree to release your contribution to the public domain.
