@@ -1,11 +1,7 @@
 ---
-summary: We’re looking for experts, learners, and problem solvers to join our efforts.
-sections: []
-pageHeadStyle: short-default
-permalink: /get-involved/
-date: 2017-01-01T00:00:00.000Z
 title: Get Involved
 pageHeading: ""
+summary: We’re looking for experts, learners, and problem solvers to join our efforts.
 useDark: true
 cardGrid:
   - noPadding: false
@@ -44,9 +40,12 @@ cardGrid:
       regardless of technical ability. 
     btnLink: https://www.meetup.com/Code-for-Tucson/
     btnText: Join our next meetup
-metaDescription: This is a sample meta description. If one is not present in
-  your page/post's front matter, the default metadata.desciption will be used
-  instead.
+sections: []
+pageHeadStyle: short-default
+permalink: /get-involved/
+date: 2017-01-01T00:00:00.000Z
+metaDescription: Several ways to get involved with Code for Tucson, a local
+  brigade of Code for America, through events and projects.
 eleventyNavigation:
   key: Get Involved
   order: 1
