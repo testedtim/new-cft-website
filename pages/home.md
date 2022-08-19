@@ -1,13 +1,11 @@
 ---
-summary: summary
-pageHeadStyle: large-default
-layout: layouts/home.njk
-sections: []
-permalink: /
-date: 2016-01-01T00:00:00.000Z
 title: Home
 pageHeading: We harness technology, data, and design to tackle local issues and
   make Tucson a better place to live.
+summary: summary
+pageHeadStyle: large-default
+layout: layouts/home.njk
+useDark: false
 cardGrid:
   - heading: Join the conversation
     summary: Sign up for our Slack workspace. We primarily use Slack for connecting
@@ -29,8 +27,12 @@ cardGrid:
     altText: Meetup logo
     image: /static/img/meetup-logo.png
     noPadding: false
+sections: []
+permalink: /
+date: 2016-01-01T00:00:00.000Z
+metaDescription: A local Tucson chapter of the national Code for America that
+  puts technology to work in service of our communities.
 headerText: We harness technology, data, and design to tackle local issues and
   make Tucson a better place to live.
-useDark: false
 ---
 We're a local brigade of the national [Code for America](https://codeforamerica.org/) that puts technology to work in service of our communities. You don't need to be a coder to participate. Volunteers from all walks of life are invited to join us!
