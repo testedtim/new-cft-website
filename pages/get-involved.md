@@ -13,7 +13,7 @@ cardGrid:
       events. Sign up, introduce yourself, then join channels you are interested
       in. Any questions about us? Feel free to ask in our #general channel!"
     btnText: Join Slack
-    btnLink: https://codefortucson.slack.com/
+    btnLink: https://join.slack.com/t/codefortucson/shared_invite/zt-1g8pfjtn9-IS5eL0C0v5H4EvasEJay1g
   - noPadding: false
     image: /static/img/new-logo.jpg
     summary: >
