@@ -669,7 +669,7 @@ a:focus-visible {
   display: block;
   min-width: 100%;
   min-height: 100%;
-  max-width: none;
+  max-width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
