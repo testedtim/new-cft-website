@@ -21,6 +21,7 @@ section: page
 				<img loading="lazy" src="{{ '/static/img/bg.jpg' | url }}" alt="">
 			</picture>
 		</header>
+
 		<main id="main">
 			<section class="container mainFeature bg-white">
 				<h1 class="show-for-sr">{{ title }}</h1>
@@ -30,7 +31,6 @@ section: page
 				{% endif %}
 				
 				{{ layoutContent | safe }}
-				
 			</section>
 
 			<section class="container">

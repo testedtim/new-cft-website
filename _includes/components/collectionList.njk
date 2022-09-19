@@ -25,21 +25,21 @@
 			{% endif %}
 
             {% if not item.data.isFeature %}
-			<p>
-				<time datetime="{{ item.date | machineDate }}">
-					<small>{{ item.date | readableDate }} by <a href="/authors/{{ item.data.author | slug }}/">{{ item.data.author }}</a></small>
-				</time>
-			</p>
-			{% if item.data.tags %}
 				<p>
-					{% for tag in item.data.tags %}
-		  			{%- if tag != "{{ collectionName }}" -%}
-		  				{% set tagUrl %}/tags/{{ tag }}/{% endset %}
-		  			<a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
-		  			{%- endif -%}
-					{% endfor %}
+					<time datetime="{{ item.date | machineDate }}">
+						<small>{{ item.date | readableDate }} by <a href="/authors/{{ item.data.author | slug }}/">{{ item.data.author }}</a></small>
+					</time>
 				</p>
-			{% endif %}
+				{% if item.data.tags %}
+					<p>
+						{% for tag in item.data.tags %}
+						{%- if tag != "{{ collectionName }}" -%}
+							{% set tagUrl %}/tags/{{ tag }}/{% endset %}
+						<a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
+						{%- endif -%}
+						{% endfor %}
+					</p>
+				{% endif %}
             {% endif %}
 		</article>
 	{% endfor %}

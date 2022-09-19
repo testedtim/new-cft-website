@@ -4,6 +4,13 @@
 	{% include "components/head.njk" %}
 
 	<body>
+		<svg style="display: none;">
+			<symbol id="icon-dropdown-arrow">
+				<title>A down arrow</title>
+				<path d="M19 9l-7 7-7-7"/>
+			</symbol>
+		</svg>
+
 		<header class="pageHead {{ pageHeadStyle }}">
 			<div class="nav-wrap">
 				{% include "components/mainNav.njk" %}
@@ -22,6 +29,9 @@
 			<section>
 				<div class="container content pullUp">
 					<h1>{{ title }}</h1>
+
+					{% include "components/breadcrumbs.njk" %}
+
 				</div>
 
 				{# if pageHeading or summary %}

@@ -1,0 +1,60 @@
+<nav class="breadcrumbs" role="navigation">
+    <a href="/">
+        <span class="home-label">Home</span>
+    </a>
+    <span class="crumb-separator" aria-hidden="true">/</span>
+
+    {%- if tags[0] == 'project' %}
+    {% set projects = collections['project'] %}
+
+    <a href="/projects/">Projects</a>
+    <span class="crumb-separator" aria-hidden="true">/</span>
+
+    <span class="crumb">
+        <a aria-current="page">{{ title }}</a>
+        <span class="crumbicon">
+            <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+                <use href="#icon-dropdown-arrow"></use>
+            </svg>
+            <select class="disguised-select" title="Navigate to another page">
+                <option selected="">{{ title }}</option>
+            {%- for entry in projects %}
+                {% if entry.data.title != title%}
+                <option value="{{ entry.url }}">{{ entry.data.title }}</option>
+                {% endif %}
+            {%- endfor %}
+            </select>
+        </span>
+    </span>
+
+    {% else -%}
+        <span class="crumb">
+            <a aria-current="page">{{ title }}</a>
+        </span>
+    {% endif -%}
+</nav>
+
+<script>
+    const crumbs = document.querySelectorAll('.breadcrumbs select')
+    const allowedKeys = new Set(['Tab', 'Enter', ' '])
+    const preventedKeys = new Set(['ArrowUp', 'ArrowDown'])
+
+    // watch crumbs for changes,
+    // ensures it's a full value change, not a user exploring options via keyboard
+    crumbs.forEach(nav => {
+        let ignoreChange = false
+
+        nav.addEventListener('change', e => {
+            if (ignoreChange) return
+            
+            window.location.href = e.currentTarget.value;
+        })
+
+        nav.addEventListener('keydown', ({ key }) => {
+            if (preventedKeys.has(key))
+                ignoreChange = true
+            else if (allowedKeys.has(key))
+                ignoreChange = false
+        })
+    })
+</script>
