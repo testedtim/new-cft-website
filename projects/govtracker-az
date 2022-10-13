@@ -1,0 +1,35 @@
+# GovTrackerAZ
+
+## 
+---
+summary: Providing local government and local election information for the public 
+imgAlt: two hands on a laptop keyboard
+pageHeadStyle: short-default
+pastProject: false
+title: GovTrackerAZ
+image: /static/img/mac-fingers.jpg
+tags:
+  - project
+isPastProject: false
+---
+## Project team
+
+* Tested Tim, project lead, researcher, writer
+* Jeff Bloominthal, developer
+
+## Description
+
+We are building a website to track local issues and elections, holding politicans accountable.
+
+## What we have so far
+
+## How you can help
+
+We need people to help us with user research, usability testing, design, content, web development, and accessibility. For example:
+
+* Developers
+* User experience researchers
+* Accessibility experts
+* Content writers
+
+To get involved, join the [\#website channel on Slack](https://codefortucson.slack.com/archives/C09AARA9M), check out the [official Github repo](https://github.com/CodeForTucson/), or come to our [next Virtual Project Night](https://www.meetup.com/Code-for-Tucson/events/calendar/).
